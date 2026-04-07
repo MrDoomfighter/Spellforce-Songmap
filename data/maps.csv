@@ -1,0 +1,50 @@
+map,mapSort,mapNameDE,campaign,length,openerId,loopId
+tutorial.map,100,Tutorial,1,512,34,104
+000_Greyfell.map,101,Graufurt,1,512,,73
+001_liannon.map,102,Liannon,1,256,,33
+002_eloni.map,103,Eloni,1,512,3,4
+003_leafshade.map,104,Schattenhain,1,512,15,12
+004_the_shiel.map,105,Shiel,1,512,30,32
+005_wildland_pass.map,106,Wildland Pass,1,512,,33
+006_icegate_marsh.map,107,Frostmarschen,1,512,7,16
+007_northern_windwalls.map,108,Nördliche Windwallberge,1,512,,12
+008_southern_windwalls.map,109,Südliche Windwallberge,1,1024,,73
+008NP_stoneblade_mountain.map,110,Schwertfels,1,512,34,8
+009_greydusk_vale.map,111,Grauschattental,1,512,14,11
+012_howling_mounds.map,112,Klagende Steine,1,512,29,31
+013_whisper.map,113,Wisper,1,512,,11
+014_the_godwall.map,114,Gottwall,1,512,,33
+016_mulandir.map,115,Mulandir,1,512,28,31
+018_farlorns_hope.map,116,Farlorns Heim,1,512,,33
+019_the_rift.map,117,Spalt,1,512,14,11
+021_southern_godmark.map,118,Südliche Gottmark,1,512,7,8
+023_nightwhisper_dale.map,119,Nachtflüstertal,1,512,15,12
+025_breathing_forest.map,120,Der atmende Wald,1,512,29,31
+027_sharrowdale.map,121,Sharrow,1,512,30,32
+P101_Mirraw_Thur.map,201,Mirraw Thur,2,512,136,146
+P102_Stormcleaver_Rocks.map,202,Sturmfelsen,2,512,,148
+P103_Echo_Swamps.map,203,Echosümpfe,2,512,,148
+P104_Frostfall.map,204,Frostfall,2,512,,33
+P105_Tirganach.map,205,Tirganach,2,512,7,147
+P107_Winterdeep.map,206,Wintertal,2,256,,8
+P108_Fastholme.map,207,Fastholme,2,512,,16
+P109_Nevershade_Frontier.map,208,Schattengrenze,2,512,,146
+P110_Shaldun.map,209,Shal'Dun,2,512,14,31
+P111_Firefangs.map,210,Glutfänge,2,512,,138
+P113_The_Abyss.map,211,Der Abgrund,2,512,,73
+P115_Frostweaver_Rift.map,212,Gletscherbruch,2,256,150,147
+P201_Blackwater_Coast.map,301,Schwarze Küste,3,256,,237
+P202_City_Of_Souls.map,302,Stadt der Seelen,3,512,150,33
+P203_Onyx_Shores.map,303,Onyxbucht,3,512,136,236
+P204_Empyria.map,304,Empyria,3,512,228,238
+P205_Dryad_Cove.map,305,Dryadenhain,3,512,137,73
+P206_Red_Waste.map,306,Rote Wüste,3,512,30,11
+P207_Raven_Pass.map,307,Rabenpass,3,512,7,236
+P208_Blazing_Stones.map,308,Brennende Felsen,3,512,14,237
+P200_Collosseum.map,309,Colosseum,3,256,228,33
+P209_Kathai.map,310,Kathai,3,512,229,238
+P210_The_Clockwork_Crypts.map,311,Uhrwerkhallen,3,512,,33
+P211_Darkwind_Keep.map,312,Wachfeste,3,512,15,236
+P212_The_Gorge.map,313,Der Schlund,3,512,3,148
+P213_The_Bone_Temple.map,314,Knochentempel,3,512,,237
+

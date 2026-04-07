@@ -1,0 +1,92 @@
+---
+title: 'Startseite'
+---
+
+Willkommen auf der Spellforce Songkarte. Diese Anwendung ist dem wundervollen Soundtrack des ersten Teils der Spellforce-Reihe gewidmet.
+
+Entdecken Sie interaktiv, welche Titel auf welchen Karten und an welchen Orten gespielt werden.
+
+### Das Lied-System von Spellforce
+
+Jede Karte von Spellforce verfügt standardmäßig über zwei Titel. Einer von diesen spielt bei Betritt der Karte (Opener). Sobald der Opener abgespielt wurde, wird ein zweiter Titel in Endlosschleife gespielt (Loop). Einige Karten verügen über keinen Opener. In diesem Fall wird der Loop direkt abgespielt.
+
+Nach demselben Prinzip sind im Spiel bestimmte Regionen definiert, innerhalb derer andere Titel gespielt werden, sofern die Kamera des Spielers auf diesen zentriert ist. Ein Beispiel hierfür ist die Stadt Graufurt innerhalb deren Grenzen der Titel sharrowdale.mp3 (einmalig) abgespielt wird.
+
+Abseits davon gibt es eine Reihe von Titeln, die Teil des offiziellen Soundtracks sind, aber nicht von der Region abhängig sind, sondern in folgenden Fällen gespielt werden:
+
+-   der Spieler befindet sich im Menü
+
+-   die Armee des Spielers befindet sich im Kampf
+
+-   der Avatar stirbt/wechselt die Karte
+
+Da diese Lieder keinen räumlichen Bezug haben, werden sie auf dieser Seite nicht näher betrachtet.
+
+Die Informationen auf dieser Seite basieren auf einer systematischen Auswertung der Datei [SndTracks.lua](https://github.com/THQNordic/SpellForceLUASources/blob/master/script/SndTracks.lua) der von THQ Nordic bereitgestellten Skriptdateien des Spiels.
+
+### Die Lieder
+In der folgenden Übersicht finden Sie alle Titel des Spellforce Soundtracks. Ausgenommen sind hierbei lediglich jene Lieder, die keinen Inhalt haben und dazu dienen Stille zu erzeigen (z. B. plain_silence.mp3). Die Tabelle fasst zudem zusammen, auf welchen Karten die einzelnen Lieder vorkommen.
+
+```{r}
+#| echo: false
+#| message: false
+
+# load libraries
+library(dplyr)
+library(tidyr)
+library(stringr)
+
+# read data
+tracks = read.csv("./data/tracks.csv")
+songs = read.csv("./data/songs.csv")
+maps = read.csv("./data/maps.csv")
+locations = read.csv("./data/locations.csv")
+
+# merge data
+songsMerged = bind_rows(
+  maps |> select(map, mapSort, mapNameDE, campaign, openerId, loopId),
+  locations |> select(map, openerId, loopId) |>
+    left_join(
+      maps |> select(map, mapSort, mapNameDE, campaign),
+      by = 'map'
+    )
+  ) |>
+  pivot_longer(
+    cols = c(openerId, loopId),
+    names_to = NULL,
+    values_to = 'id'
+  ) |>
+  full_join(
+    tracks |> select(id, file),
+    by = 'id'
+  ) |>
+  left_join(
+    songs,
+    by = 'file',
+    suffix = c('Map', 'Song')
+  ) |>
+  select(-id) |>
+  distinct()
+
+songsAggr = songsMerged |>
+  filter(!is.na(file) & str_detect(file, 'silence|red_legion.mp3', negate = TRUE)) |>
+  arrange(file, mapSort) |>
+  group_by(campaignSong, file, youtubeCode) |>
+  summarise(maps = paste0('<a href = ', map |> na.omit(), '.html>', mapNameDE |> na.omit(), '</a>', collapse = '<br>')) |>
+  ungroup() |>
+  mutate(
+    campaignSong = campaignSong |> factor(labels = c('The Order of Dawn', 'The Breath of Winter', 'Shadow of the Phoenix')),
+    youtubeLink = ifelse(youtubeCode == '', '', paste0('<iframe width="300" height="200" src="https://www.youtube.com/embed/', youtubeCode,
+    '" title="Test" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'))
+  )
+
+songsAggr |>
+  select(file, campaignSong, youtubeLink, maps) |>
+  rename(
+    Lied = file,
+    Kampagne = campaignSong,
+    Link = youtubeLink,
+    Karten = maps
+  )
+
+```
