@@ -1,5 +1,5 @@
 ---
-title: 'Startseite'
+title: Startseite
 ---
 
 Willkommen auf der Spellforce Songkarte. Diese Anwendung ist dem wundervollen Soundtrack des ersten Teils der Spellforce-Reihe gewidmet.
@@ -30,56 +30,16 @@ In der folgenden Übersicht finden Sie alle Titel des Spellforce Soundtracks. Au
 ```{r}
 #| echo: false
 #| message: false
+#| warning: false
 
 # load libraries
 library(dplyr)
-library(tidyr)
-library(stringr)
 
-# read data
-tracks = read.csv("./data/tracks.csv")
-songs = read.csv("./data/songs.csv")
-maps = read.csv("./data/maps.csv")
-locations = read.csv("./data/locations.csv")
+# load data
+load("./data/data.Rdata")
 
-# merge data
-songsMerged = bind_rows(
-  maps |> select(map, mapSort, mapNameDE, campaign, openerId, loopId),
-  locations |> select(map, openerId, loopId) |>
-    left_join(
-      maps |> select(map, mapSort, mapNameDE, campaign),
-      by = 'map'
-    )
-  ) |>
-  pivot_longer(
-    cols = c(openerId, loopId),
-    names_to = NULL,
-    values_to = 'id'
-  ) |>
-  full_join(
-    tracks |> select(id, file),
-    by = 'id'
-  ) |>
-  left_join(
-    songs,
-    by = 'file',
-    suffix = c('Map', 'Song')
-  ) |>
-  select(-id) |>
-  distinct()
-
-songsAggr = songsMerged |>
-  filter(!is.na(file) & str_detect(file, 'silence|red_legion.mp3', negate = TRUE)) |>
-  arrange(file, mapSort) |>
-  group_by(campaignSong, file, youtubeCode) |>
-  summarise(maps = paste0('<a href = ', map |> na.omit(), '.html>', mapNameDE |> na.omit(), '</a>', collapse = '<br>')) |>
-  ungroup() |>
-  mutate(
-    campaignSong = campaignSong |> factor(labels = c('The Order of Dawn', 'The Breath of Winter', 'Shadow of the Phoenix')),
-    youtubeLink = ifelse(youtubeCode == '', '', paste0('<a href="https://www.youtube.com/watch?', youtubeCode,'">Link</a>'))
-  )
-
-songsAggr |>
+# output table
+tableData |>
   select(file, campaignSong, youtubeLink, maps) |>
   rename(
     Lied = file,
