@@ -76,8 +76,7 @@ songsAggr = songsMerged |>
   ungroup() |>
   mutate(
     campaignSong = campaignSong |> factor(labels = c('The Order of Dawn', 'The Breath of Winter', 'Shadow of the Phoenix')),
-    youtubeLink = ifelse(youtubeCode == '', '', paste0('<iframe width="300" height="200" src="https://www.youtube.com/embed/', youtubeCode,
-    '" title="Test" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'))
+    youtubeLink = ifelse(youtubeCode == '', '', paste0('<a href="https://www.youtube.com/watch?', youtubeCode,'">Link</a>'))
   )
 
 songsAggr |>
@@ -85,7 +84,7 @@ songsAggr |>
   rename(
     Lied = file,
     Kampagne = campaignSong,
-    Link = youtubeLink,
+    Youtube = youtubeLink,
     Karten = maps
   )
 
