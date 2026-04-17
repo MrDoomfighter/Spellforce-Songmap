@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.25">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Spalt – Spellforce Songkarte</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-63d8435ad34a144f1f40e022524cb1e7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<link href="site_libs/htmltools-fill-0.5.9/fill.css" rel="stylesheet">
+<script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="site_libs/leaflet-1.3.1/leaflet.css" rel="stylesheet">
+<script src="site_libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="site_libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet">
+<script src="site_libs/proj4-2.6.2/proj4.min.js"></script>
+<script src="site_libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="site_libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet">
+<script src="site_libs/leaflet-binding-2.2.3/leaflet.js"></script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed fullcontent quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    </a>
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Spellforce Songkarte</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Startseite</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-the-order-of-dawn" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">The Order of Dawn</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-the-order-of-dawn">    
+        <li>
+    <a class="dropdown-item" href="./tutorial.map.html">
+ <span class="dropdown-text">Tutorial</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./000_Greyfell.map.html">
+ <span class="dropdown-text">Graufurt</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./001_liannon.map.html">
+ <span class="dropdown-text">Liannon</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./002_eloni.map.html">
+ <span class="dropdown-text">Eloni</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./003_leafshade.map.html">
+ <span class="dropdown-text">Schattenhain</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./004_the_shiel.map.html">
+ <span class="dropdown-text">Shiel</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./005_wildland_pass.map.html">
+ <span class="dropdown-text">Wildland Pass</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./006_icegate_marsh.map.html">
+ <span class="dropdown-text">Frostmarschen</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./007_northern_windwalls.map.html">
+ <span class="dropdown-text">Nördliche Windwallberge</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./008_southern_windwalls.map.html">
+ <span class="dropdown-text">Südliche Windwallberge</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./008NP_stoneblade_mountain.map.html">
+ <span class="dropdown-text">Schwertfels</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./009_greydusk_vale.map.html">
+ <span class="dropdown-text">Grauschattental</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./012_howling_mounds.map.html">
+ <span class="dropdown-text">Klagende Steine</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./013_whisper.map.html">
+ <span class="dropdown-text">Wisper</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./014_the_godwall.map.html">
+ <span class="dropdown-text">Gottwall</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./016_mulandir.map.html">
+ <span class="dropdown-text">Mulandir</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./018_farlorns_hope.map.html">
+ <span class="dropdown-text">Farlorns Heim</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./019_the_rift.map.html">
+ <span class="dropdown-text">Spalt</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./021_southern_godmark.map.html">
+ <span class="dropdown-text">Südliche Gottmark</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./023_nightwhisper_dale.map.html">
+ <span class="dropdown-text">Nachtflüstertal</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./025_breathing_forest.map.html">
+ <span class="dropdown-text">Der atmende Wald</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./027_sharrowdale.map.html">
+ <span class="dropdown-text">Sharrow</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-the-breath-of-winter" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">The Breath of Winter</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-the-breath-of-winter">    
+        <li>
+    <a class="dropdown-item" href="./P101_Mirraw_Thur.map.html">
+ <span class="dropdown-text">Mirraw Thur</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./P102_Stormcleaver_Rocks.map.html">
+ <span class="dropdown-text">Sturmfelsen</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./P103_Echo_Swamps.map.html">
+ <span class="dropdown-text">Echosümpfe</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./P104_Frostfall.map.html">
+ <span class="dropdown-text">Frostfall</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./P105_Tirganach.map.html">
+ <span class="dropdown-text">Tirganach</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./P107_Winterdeep.map.html">
+ <span class="dropdown-text">Wintertal</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./P108_Fastholme.map.html">
+ <span class="dropdown-text">Fastholme</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./P109_Nevershade_Frontier.map.html">
+ <span class="dropdown-text">Schattengrenze</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./P110_Shaldun.map.html">
+ <span class="dropdown-text">Shal’Dun</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./P111_Firefangs.map.html">
+ <span class="dropdown-text">Glutfänge</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./P113_The_Abyss.map.html">
+ <span class="dropdown-text">Der Abgrund</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./P115_Frostweaver_Rift.map.html">
+ <span class="dropdown-text">Gletscherbruch</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-shadow-of-the-phoenix" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Shadow of the Phoenix</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-shadow-of-the-phoenix">    
+        <li>
+    <a class="dropdown-item" href="./P201_Blackwater_Coast.map.html">
+ <span class="dropdown-text">Schwarze Küste</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./P202_City_Of_Souls.map.html">
+ <span class="dropdown-text">Stadt der Seelen</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./P203_Onyx_Shores.map.html">
+ <span class="dropdown-text">Onyxbucht</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./P204_Empyria.map.html">
+ <span class="dropdown-text">Empyria</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./P205_Dryad_Cove.map.html">
+ <span class="dropdown-text">Dryadenhain</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./P206_Red_Waste.map.html">
+ <span class="dropdown-text">Rote Wüste</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./P207_Raven_Pass.map.html">
+ <span class="dropdown-text">Rabenpass</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./P208_Blazing_Stones.map.html">
+ <span class="dropdown-text">Brennende Felsen</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./P200_Collosseum.map.html">
+ <span class="dropdown-text">Colosseum</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./P209_Kathai.map.html">
+ <span class="dropdown-text">Kathai</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./P210_The_Clockwork_Crypts.map.html">
+ <span class="dropdown-text">Uhrwerkhallen</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./P211_Darkwind_Keep.map.html">
+ <span class="dropdown-text">Wachfeste</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./P212_The_Gorge.map.html">
+ <span class="dropdown-text">Der Schlund</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./P213_The_Bone_Temple.map.html">
+ <span class="dropdown-text">Knochentempel</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Spalt</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Auf der Karte wird <strong>entry_desertworld.mp3</strong> als Opener abgespielt</p>
+<iframe width="100%" height="600px" src="https://www.youtube.com/embed/DauHhxNMAjE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+<p>Danach wird <strong>plain_desertworld.mp3</strong> in Endlosschleife abgespielt</p>
+<iframe width="100%" height="600px" src="https://www.youtube.com/embed/007aXhehBmk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+<p>Hier können Sie nachvollziehen in welchen Regionen andere Lieder abgespielt werden</p>
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-355e50392c136da61953" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-355e50392c136da61953">{"x":{"options":{"minZoom":0,"maxZoom":2,"crs":{"crsClass":"L.CRS.Simple","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"fitBounds":[-512,-512,1024,1024,[]],"calls":[{"method":"setMaxBounds","args":[-512,-512,1024,1024]},{"method":"addPolygons","args":[[[[{"lng":[250,252.4433369012197,254.8859295383501,257.3270338740122,259.7659063241775,262.2018039846722,264.6339848574715,267.0617080767207,269.4842341344092,271.9008251056323,274.3107448733703,276.7132593527162,279.1076367144863,281.4931476081411,283.8690653839535,286.2346663143529,288.5892298143799,290.9320386611831,293.2623792124926,295.5795416240019,297.8828200655936,300.171512936342,302.4449230782277,304.7023579884983,306.943130030612,309.1665566436979,311.3719605504708,313.5586699635365,315.7260187900247,317.8733468344872,320,322.1053304874076,324.1886969926487,326.2494649021038,328.2870064859046,330.3007010891465,332.2899353209463,334.2541032412868,336.1926065455922,338.1048547469773,339.9902653561155,341.848264058671,343.6782848902401,345.4797704087498,347.2521718642596,348.9949493661167,350.7075720474111,352.3895182266839,354.0402755668352,355.6593412311881,357.2462220366569,358.8004346039759,360.3215055049411,361.808971406621,363.2623792124926,364.6812862004589,366.0652601577058,367.4138795123594,368.7267334618996,370.0034220982957,371.2435565298214,372.4467589995154,373.6126630002498,374.7409133863715,375.8311664818834,376.883090185131,377.8963640699641,378.8706794833416,379.8057396393502,380.7012597096083,381.5569669100272,382.3726005839043,383.1479122813215,383.8826658348249,384.5766374313646,385.2296156804696,385.8414016786395,386.4118090699329,386.9406641027328,387.427805682673,387.8730854217091,388.2763676833193,388.6375296238199,388.9564612297851,389.2330653515583,389.4672577328444,389.6589670363754,389.8081348656403,389.9147157826734,389.9786773218948,390,389.9786773218948,389.9147157826734,389.8081348656403,389.6589670363754,389.4672577328444,389.2330653515583,388.9564612297851,388.6375296238199,388.2763676833193,387.8730854217091,387.427805682673,386.9406641027328,386.4118090699329,385.8414016786395,385.2296156804696,384.5766374313646,383.882665834825,383.1479122813215,382.3726005839044,381.5569669100272,380.7012597096083,379.8057396393502,378.8706794833416,377.8963640699641,376.883090185131,375.8311664818834,374.7409133863715,373.6126630002498,372.4467589995154,371.2435565298214,370.0034220982957,368.7267334618996,367.4138795123594,366.0652601577058,364.6812862004589,363.2623792124926,361.808971406621,360.3215055049411,358.8004346039759,357.2462220366569,355.6593412311881,354.0402755668352,352.3895182266839,350.7075720474111,348.9949493661167,347.2521718642597,345.4797704087498,343.6782848902401,341.848264058671,339.9902653561155,338.1048547469773,336.1926065455922,334.2541032412868,332.2899353209463,330.3007010891464,328.2870064859046,326.2494649021038,324.1886969926487,322.1053304874076,320,317.8733468344872,315.7260187900247,313.5586699635365,311.3719605504709,309.166556643698,306.943130030612,304.7023579884983,302.4449230782277,300.1715129363421,297.8828200655936,295.5795416240019,293.2623792124926,290.9320386611832,288.5892298143799,286.2346663143529,283.8690653839535,281.4931476081412,279.1076367144863,276.7132593527163,274.3107448733703,271.9008251056324,269.4842341344091,267.0617080767207,264.6339848574715,262.2018039846722,259.7659063241776,257.3270338740122,254.8859295383502,252.4433369012197,250,247.5566630987803,245.1140704616499,242.6729661259879,240.2340936758225,237.7981960153279,235.3660151425285,232.9382919232793,230.5157658655908,228.0991748943677,225.6892551266297,223.2867406472838,220.8923632855137,218.5068523918589,216.1309346160465,213.7653336856471,211.4107701856202,209.0679613388168,206.7376207875073,204.4204583759981,202.1171799344064,199.8284870636579,197.5550769217723,195.2976420115017,193.056869969388,190.8334433563021,188.6280394495292,186.4413300364635,184.2739812099753,182.1266531655128,180,177.8946695125924,175.8113030073513,173.7505350978962,171.7129935140954,169.6992989108536,167.7100646790538,165.7458967587133,163.8073934544079,161.8951452530228,160.0097346438845,158.151735941329,156.3217151097599,154.5202295912502,152.7478281357403,151.0050506338833,149.2924279525889,147.6104817733161,145.9597244331648,144.340658768812,142.7537779633431,141.199565396024,139.6784944950589,138.191028593379,136.7376207875074,135.3187137995412,133.9347398422942,132.5861204876406,131.2732665381004,129.9965779017043,128.7564434701786,127.5532410004846,126.3873369997502,125.2590866136285,124.1688335181166,123.116909814869,122.1036359300359,121.1293205166584,120.1942603606498,119.2987402903918,118.4430330899729,117.6273994160956,116.8520877186785,116.1173341651751,115.4233625686353,114.7703843195305,114.1585983213605,113.5881909300671,113.0593358972672,112.572194317327,112.1269145782909,111.7236323166807,111.3624703761802,111.0435387702149,110.7669346484417,110.5327422671556,110.3410329636246,110.1918651343597,110.0852842173266,110.0213226781052,110,110.0213226781052,110.0852842173266,110.1918651343597,110.3410329636246,110.5327422671556,110.7669346484417,111.0435387702149,111.3624703761801,111.7236323166807,112.1269145782909,112.572194317327,113.0593358972672,113.5881909300671,114.1585983213605,114.7703843195304,115.4233625686353,116.117334165175,116.8520877186785,117.6273994160956,118.4430330899728,119.2987402903917,120.1942603606498,121.1293205166583,122.1036359300358,123.116909814869,124.1688335181166,125.2590866136285,126.3873369997502,127.5532410004846,128.7564434701786,129.9965779017043,131.2732665381003,132.5861204876406,133.9347398422942,135.3187137995411,136.7376207875074,138.191028593379,139.6784944950589,141.199565396024,142.7537779633431,144.3406587688119,145.9597244331648,147.6104817733162,149.2924279525888,151.0050506338833,152.7478281357403,154.5202295912501,156.3217151097598,158.151735941329,160.0097346438845,161.8951452530228,163.8073934544079,165.7458967587132,167.7100646790537,169.6992989108535,171.7129935140954,173.7505350978962,175.8113030073513,177.8946695125924,179.9999999999999,182.1266531655127,184.2739812099753,186.4413300364634,188.6280394495291,190.8334433563021,193.056869969388,195.2976420115017,197.5550769217723,199.8284870636579,202.1171799344063,204.4204583759981,206.7376207875073,209.0679613388168,211.4107701856202,213.7653336856471,216.1309346160465,218.5068523918588,220.8923632855136,223.2867406472838,225.6892551266297,228.0991748943676,230.5157658655908,232.9382919232793,235.3660151425284,237.7981960153278,240.2340936758224,242.6729661259879,245.1140704616499,247.5566630987803,250],"lat":[400,399.9786773218948,399.9147157826734,399.8081348656403,399.6589670363754,399.4672577328444,399.2330653515583,398.9564612297851,398.6375296238199,398.2763676833193,397.8730854217091,397.427805682673,396.9406641027328,396.4118090699329,395.8414016786395,395.2296156804696,394.5766374313646,393.882665834825,393.1479122813215,392.3726005839044,391.5569669100272,390.7012597096083,389.8057396393502,388.8706794833416,387.8963640699641,386.883090185131,385.8311664818834,384.7409133863715,383.6126630002498,382.4467589995154,381.2435565298214,380.0034220982957,378.7267334618996,377.4138795123594,376.0652601577058,374.6812862004589,373.2623792124926,371.808971406621,370.3215055049411,368.8004346039759,367.2462220366569,365.6593412311881,364.0402755668352,362.3895182266839,360.7075720474112,358.9949493661167,357.2521718642597,355.4797704087498,353.6782848902401,351.848264058671,349.9902653561155,348.1048547469773,346.1926065455922,344.2541032412868,342.2899353209463,340.3007010891465,338.2870064859046,336.2494649021038,334.1886969926487,332.1053304874076,330,327.8733468344872,325.7260187900247,323.5586699635365,321.3719605504708,319.1665566436979,316.9431300306121,314.7023579884983,312.4449230782277,310.171512936342,307.8828200655936,305.5795416240019,303.2623792124926,300.9320386611831,298.5892298143799,296.2346663143529,293.8690653839535,291.4931476081411,289.1076367144863,286.7132593527163,284.3107448733703,281.9008251056324,279.4842341344092,277.0617080767207,274.6339848574715,272.2018039846722,269.7659063241775,267.3270338740122,264.8859295383501,262.4433369012197,260,257.5566630987803,255.1140704616499,252.6729661259879,250.2340936758225,247.7981960153278,245.3660151425285,242.9382919232794,240.5157658655909,238.0991748943676,235.6892551266297,233.2867406472837,230.8923632855137,228.5068523918589,226.1309346160465,223.7653336856471,221.4107701856201,219.0679613388169,216.7376207875074,214.4204583759981,212.1171799344064,209.828487063658,207.5550769217723,205.2976420115017,203.056869969388,200.8334433563021,198.6280394495292,196.4413300364635,194.2739812099753,192.1266531655128,190,187.8946695125924,185.8113030073513,183.7505350978962,181.7129935140954,179.6992989108536,177.7100646790538,175.7458967587132,173.8073934544078,171.8951452530228,170.0097346438845,168.151735941329,166.3217151097599,164.5202295912502,162.7478281357403,161.0050506338833,159.2924279525889,157.6104817733161,155.9597244331648,154.3406587688119,152.7537779633431,151.1995653960241,149.6784944950589,148.191028593379,146.7376207875074,145.3187137995411,143.9347398422942,142.5861204876406,141.2732665381004,139.9965779017043,138.7564434701786,137.5532410004846,136.3873369997502,135.2590866136285,134.1688335181166,133.116909814869,132.1036359300359,131.1293205166583,130.1942603606498,129.2987402903918,128.4430330899728,127.6273994160956,126.8520877186785,126.117334165175,125.4233625686354,124.7703843195305,124.1585983213605,123.5881909300671,123.0593358972672,122.572194317327,122.1269145782909,121.7236323166807,121.3624703761801,121.0435387702149,120.7669346484417,120.5327422671556,120.3410329636246,120.1918651343597,120.0852842173266,120.0213226781052,120,120.0213226781052,120.0852842173266,120.1918651343597,120.3410329636246,120.5327422671556,120.7669346484417,121.0435387702149,121.3624703761802,121.7236323166807,122.1269145782909,122.572194317327,123.0593358972672,123.5881909300671,124.1585983213605,124.7703843195304,125.4233625686353,126.117334165175,126.8520877186785,127.6273994160957,128.4430330899728,129.2987402903917,130.1942603606498,131.1293205166583,132.1036359300359,133.116909814869,134.1688335181166,135.2590866136285,136.3873369997502,137.5532410004846,138.7564434701786,139.9965779017043,141.2732665381004,142.5861204876406,143.9347398422941,145.3187137995411,146.7376207875074,148.191028593379,149.6784944950589,151.1995653960241,152.7537779633431,154.3406587688119,155.9597244331648,157.6104817733161,159.2924279525889,161.0050506338833,162.7478281357403,164.5202295912502,166.3217151097598,168.1517359413289,170.0097346438845,171.8951452530228,173.8073934544079,175.7458967587132,177.7100646790537,179.6992989108535,181.7129935140954,183.7505350978962,185.8113030073513,187.8946695125924,189.9999999999999,192.1266531655127,194.2739812099753,196.4413300364634,198.6280394495291,200.8334433563021,203.056869969388,205.2976420115017,207.5550769217723,209.8284870636579,212.1171799344063,214.4204583759981,216.7376207875074,219.0679613388168,221.4107701856202,223.7653336856471,226.1309346160465,228.5068523918589,230.8923632855136,233.2867406472838,235.6892551266297,238.0991748943676,240.5157658655908,242.9382919232793,245.3660151425284,247.7981960153278,250.2340936758224,252.6729661259879,255.1140704616499,257.5566630987803,260,262.4433369012197,264.8859295383501,267.327033874012,269.7659063241775,272.2018039846721,274.6339848574715,277.0617080767207,279.4842341344092,281.9008251056323,284.3107448733702,286.7132593527162,289.1076367144863,291.4931476081411,293.8690653839535,296.2346663143529,298.5892298143798,300.9320386611831,303.2623792124926,305.5795416240019,307.8828200655936,310.1715129363421,312.4449230782277,314.7023579884983,316.943130030612,319.1665566436978,321.3719605504708,323.5586699635365,325.7260187900247,327.8733468344872,330,332.1053304874076,334.1886969926487,336.2494649021037,338.2870064859046,340.3007010891465,342.2899353209462,344.2541032412867,346.1926065455921,348.1048547469771,349.9902653561155,351.848264058671,353.6782848902402,355.4797704087498,357.2521718642596,358.9949493661167,360.7075720474111,362.3895182266838,364.0402755668351,365.6593412311881,367.2462220366569,368.800434603976,370.3215055049411,371.808971406621,373.2623792124926,374.6812862004588,376.0652601577058,377.4138795123594,378.7267334618996,380.0034220982957,381.2435565298214,382.4467589995153,383.6126630002498,384.7409133863715,385.8311664818834,386.883090185131,387.8963640699641,388.8706794833416,389.8057396393502,390.7012597096082,391.5569669100271,392.3726005839044,393.1479122813215,393.8826658348249,394.5766374313646,395.2296156804696,395.8414016786395,396.4118090699329,396.9406641027327,397.427805682673,397.8730854217091,398.2763676833193,398.6375296238198,398.9564612297851,399.2330653515583,399.4672577328444,399.6589670363754,399.8081348656403,399.9147157826734,399.9786773218948,400]}]]],null,null,{"interactive":true,"className":"","stroke":true,"color":"darkgreen","weight":1,"opacity":0.5,"fill":true,"fillColor":"lightgreen","fillOpacity":0.3,"smoothFactor":1,"noClip":false},"<span style=\"font-weight: bold\">forbidden_zone.mp3<\/span><br><iframe width=\"300\" height=\"200\" src=\"https://www.youtube.com/embed/cayHC4HUmQc\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen>\n      <\/iframe><br>",null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},{"opacity":1,"fillOpacity":0.5,"bringToFront":true}]}],"limits":{"lat":[120,400],"lng":[110,390]}},"evals":[],"jsHooks":{"render":[{"code":"function(el, x, data) {\n  return (\n    function(el, t) {\n      var myMap = this;\n      var image = new L.ImageOverlay(\n                        url='img/019_the_rift.map.png',\n                        [[1, 1], [512, 512]]);\n      image.addTo(myMap);\n    }).call(this.getMap(), el, x, data);\n}","data":null}]}}</script>
+
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

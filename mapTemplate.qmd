@@ -1,0 +1,125 @@
+---
+params:
+  map: 000_Greyfell.map
+---
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+# load libraries
+library(dplyr)
+library(sf)
+library(knitr)
+library(stringr)
+library(leaflet)
+library(htmlwidgets)
+
+# load data
+load("./data/data.Rdata")
+
+# filter data
+mapSongsFiltered = mapSongs |>
+  filter(map == params$map)
+
+locationSongsFiltered = locationSongs |>
+  filter(map == params$map)
+
+```
+
+---
+title: '`r mapSongsFiltered$mapNameDE`'
+---
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| results: asis
+
+# print map songs
+if (mapSongsFiltered$fileOpener == mapSongsFiltered$fileLoop | is.na(mapSongsFiltered$fileOpener)) {
+  cat(paste0('Auf der Karte wird **', mapSongsFiltered$fileLoop, '** abgespielt'))
+  if(str_detect(mapSongsFiltered$fileLoop, 'silence|atmo', negate = TRUE)) {
+    raw_html(paste0(
+      '<iframe width="100%" height="600px" src="https://www.youtube.com/embed/',
+      mapSongsFiltered$youtubeCodeLoop,
+      '" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
+    ))
+  }
+} else {
+  cat(paste0('Auf der Karte wird **', mapSongsFiltered$fileOpener, '** als Opener abgespielt'))
+  if(str_detect(mapSongsFiltered$fileOpener, 'silence|atmo', negate = TRUE)) {
+    raw_html(paste0(
+      '<iframe width="100%" height="600px" src="https://www.youtube.com/embed/',
+      mapSongsFiltered$youtubeCodeOpener,
+      '" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
+    ))
+  }
+}
+
+```
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| results: asis
+
+if (mapSongsFiltered$fileOpener != mapSongsFiltered$fileLoop & !is.na(mapSongsFiltered$fileOpener)) {
+  cat(paste0('Danach wird **', mapSongsFiltered$fileLoop, '** in Endlosschleife abgespielt'))
+  if(str_detect(mapSongsFiltered$fileLoop, 'silence|atmo', negate = TRUE)) {
+    raw_html(paste0(
+      '<iframe width="100%" height="600px" src="https://www.youtube.com/embed/',
+      mapSongsFiltered$youtubeCodeLoop,
+      '" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
+    ))
+  }
+}
+
+```
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| results: asis
+
+# print location songs
+cat('Hier können Sie nachvollziehen in welchen Regionen andere Lieder abgespielt werden\n')
+locationSongsFiltered |>
+  leaflet(
+    options = leafletOptions(
+      crs = leafletCRS(crsClass = "L.CRS.Simple"),
+      minZoom = 0,
+      maxZoom = 2
+    )
+  ) |>
+  fitBounds(-mapSongsFiltered$length, -mapSongsFiltered$length, mapSongsFiltered$length * 2, mapSongsFiltered$length * 2) |>
+  setMaxBounds(-mapSongsFiltered$length, -mapSongsFiltered$length, mapSongsFiltered$length * 2, mapSongsFiltered$length * 2) |>
+  onRender(
+    paste0("
+    function(el, t) {
+      var myMap = this;
+      var image = new L.ImageOverlay(
+                        url='img/",params$map,".png',
+                        [[1, 1], [",mapSongsFiltered$length,", ",mapSongsFiltered$length,"]]);
+      image.addTo(myMap);
+    }"
+    )
+  ) |>
+  addPolygons(
+    fillColor = 'lightgreen',
+    fillOpacity = 0.3,
+    color = 'darkgreen',
+    weight = 1,
+    highlightOptions = highlightOptions(
+      fillOpacity = 0.5,
+      opacity = 1,
+      bringToFront = TRUE
+    ),
+    popup = ~popup
+  )
+
+```

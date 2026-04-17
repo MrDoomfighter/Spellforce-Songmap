@@ -13,6 +13,10 @@ songs = read.csv("./data/songs.csv")
 maps = read.csv("./data/maps.csv")
 locations = read.csv("./data/locations.csv")
 
+# recode Shal'Dun
+maps = maps |>
+  mutate(mapNameDE = ifelse(map == 'P110_Shaldun.map', 'Shal Dun', mapNameDE))
+
 ## merge data
 tableData = bind_rows(
   maps |> select(map, mapSort, mapNameDE, campaign, openerId, loopId),
@@ -39,7 +43,7 @@ tableData = bind_rows(
   select(-id) |>
   distinct() |>
   filter(!is.na(file) & str_detect(file, 'silence|red_legion.mp3', negate = TRUE)) |>
-  arrange(file, mapSort) |>
+  arrange(campaignSong, file, mapSort) |>
   summarise(
     maps = ifelse(sum(!is.na(map) > 0), paste0('<a href = ', map |> na.omit(), '.html>', mapNameDE |> na.omit(), '</a>', collapse = '<br>'), ''),
     .by = c(campaignSong, file, youtubeCode)
@@ -59,7 +63,7 @@ mapSongs = maps |>
     by = join_by(loopId == id),
     suffix = c('Opener', 'Loop')
   ) |>
-  select(-mapSort, -length, -campaign, -openerId, -loopId)
+  select(-mapSort, -campaign, -openerId, -loopId)
 
 locationSongs = locations |>
   left_join(
@@ -87,14 +91,14 @@ locationSongs = locations |>
         
         st_point(
           c(
-            case_when(
-              x < 1 ~ 1,
-              x > length ~ length,
+            case_when( # cut off circle at maps edge
+              point.x < 1 ~ 1,
+              point.x > length ~ length,
               .default = point.x
             ),
             case_when(
-              y < 1 ~ 1,
-              y > length ~ length,
+              point.y < 1 ~ 1,
+              point.y > length ~ length,
               .default = point.y
             )
           )
@@ -106,12 +110,27 @@ locationSongs = locations |>
       st_combine() |>
       st_cast('POLYGON')
   ) |>
+  st_as_sf() |>
   ungroup() |>
   
   ## union circles with same songs
   summarise(
     geometry = st_union(geometry),
     .by = c(map, fileOpener, youtubeCodeOpener, fileLoop, youtubeCodeLoop)
+  ) |>
+  
+  ## recode popups
+  mutate(
+    popup = paste0(
+      ifelse(fileOpener == fileLoop, '', 'Opener: '), '<span style="font-weight: bold">', fileOpener, '</span><br>', ifelse(str_detect(fileOpener, 'silence|atmo'), '', paste0(
+      '<iframe width="300" height="200" src="https://www.youtube.com/embed/', youtubeCodeOpener,
+      '" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+      </iframe><br>')),
+    ifelse(fileOpener == fileLoop, '', paste0('Loop: <span style = "font-weight: bold">', fileLoop, '</span><br>', ifelse(str_detect(fileLoop, 'silence|atmo'), '', paste0(
+      '<iframe width="300" height="200" src="https://www.youtube.com/embed/', youtubeCodeLoop,
+      '" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>'))))
+    )
   )
 
 # save data (as the global environment is not accessible within a quarto render)
@@ -122,13 +141,10 @@ save(tableData, mapSongs, locationSongs, file = './data/data.Rdata')
 quarto_render(input = "index.qmd")
 
 ## loop through all maps
-for (i in 1:2) { #nrow(maps)) {
+for (i in 1:nrow(maps)) {
   quarto_render(
     input = "mapTemplate.qmd",
     output_file = paste0(maps[i, 'map'], '.html'),
-    execute_params = list(
-      map = maps[i, 'map'],
-      mapTitle = maps[i, 'mapNameDE']
-    )
+    execute_params = list(map = maps[i, 'map'])
   )
 }
