@@ -25,7 +25,7 @@ Da diese Lieder keinen räumlichen Bezug haben, werden sie auf dieser Seite nich
 Die Informationen auf dieser Seite basieren auf einer systematischen Auswertung der Datei [SndTracks.lua](https://github.com/THQNordic/SpellForceLUASources/blob/master/script/SndTracks.lua) der von THQ Nordic bereitgestellten Skriptdateien des Spiels.
 
 ### Die Lieder
-In der folgenden Übersicht finden Sie alle Titel des Spellforce Soundtracks. Ausgenommen sind hierbei lediglich jene Lieder, die keinen Inhalt haben und dazu dienen Stille zu erzeigen (z. B. plain_silence.mp3). Die Tabelle fasst zudem zusammen, auf welchen Karten die einzelnen Lieder vorkommen.
+In der folgenden Übersicht finden Sie alle Titel des Spellforce Soundtracks. Ausgenommen sind hierbei lediglich jene Lieder, die keinen Inhalt haben und dazu dienen Stille zu erzeugen (z. B. plain_silence.mp3). Die Tabelle fasst zudem zusammen, auf welchen Karten die einzelnen Lieder vorkommen.
 
 ```{r}
 #| echo: false
