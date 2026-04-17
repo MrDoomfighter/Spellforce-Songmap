@@ -50,7 +50,7 @@ tableData = bind_rows(
   ) |>
   mutate(
     campaignSong = campaignSong |> factor(labels = c('The Order of Dawn', 'The Breath of Winter', 'Shadow of the Phoenix')),
-    youtubeLink = ifelse(youtubeCode == '', '', paste0('<a href="https://www.youtube.com/watch?', youtubeCode,'">Link</a>'))
+    youtubeLink = ifelse(youtubeCode == '', '', paste0('<a href="https://www.youtube.com/watch?v=', youtubeCode,'">Link</a>'))
   )
 
 mapSongs = maps |>
