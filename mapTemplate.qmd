@@ -29,7 +29,7 @@ locationSongsFiltered = locationSongs |>
 ```
 
 ---
-title: '`r mapSongsFiltered$mapNameDE`'
+title: "`r switch(Sys.getenv('QUARTO_PROFILE'), 'english' = mapSongsFiltered$mapNameEN, 'german' = mapSongsFiltered$mapNameDE)`"
 ---
 
 ```{r}
@@ -40,7 +40,12 @@ title: '`r mapSongsFiltered$mapNameDE`'
 
 # print map songs
 if (mapSongsFiltered$fileOpener == mapSongsFiltered$fileLoop | is.na(mapSongsFiltered$fileOpener)) {
-  cat(paste0('Auf der Karte wird **', mapSongsFiltered$fileLoop, '** abgespielt'))
+  if(Sys.getenv('QUARTO_PROFILE') == 'english') {
+    cat(paste0('On this map **', mapSongsFiltered$fileLoop, '** is played'))
+  } else {
+    cat(paste0('Auf der Karte wird **', mapSongsFiltered$fileLoop, '** abgespielt'))
+  }
+  
   if(str_detect(mapSongsFiltered$fileLoop, 'silence|atmo', negate = TRUE)) {
     raw_html(paste0(
       '<iframe width="100%" height="600px" src="https://www.youtube.com/embed/',
@@ -49,7 +54,11 @@ if (mapSongsFiltered$fileOpener == mapSongsFiltered$fileLoop | is.na(mapSongsFil
     ))
   }
 } else {
-  cat(paste0('Auf der Karte wird **', mapSongsFiltered$fileOpener, '** als Opener abgespielt'))
+  if(Sys.getenv('QUARTO_PROFILE') == 'english') {
+    cat(paste0('On this map **', mapSongsFiltered$fileOpener, '** is played as Opener'))
+  } else {
+    cat(paste0('Auf der Karte wird **', mapSongsFiltered$fileOpener, '** als Opener abgespielt'))
+  }
   if(str_detect(mapSongsFiltered$fileOpener, 'silence|atmo', negate = TRUE)) {
     raw_html(paste0(
       '<iframe width="100%" height="600px" src="https://www.youtube.com/embed/',
@@ -68,7 +77,11 @@ if (mapSongsFiltered$fileOpener == mapSongsFiltered$fileLoop | is.na(mapSongsFil
 #| results: asis
 
 if (mapSongsFiltered$fileOpener != mapSongsFiltered$fileLoop & !is.na(mapSongsFiltered$fileOpener)) {
-  cat(paste0('Danach wird **', mapSongsFiltered$fileLoop, '** in Endlosschleife abgespielt'))
+  if(Sys.getenv('QUARTO_PROFILE') == 'english') {
+    cat(paste0('Afterwards **', mapSongsFiltered$fileLoop, '** is looped indefinitely'))
+  } else {
+    cat(paste0('Danach wird **', mapSongsFiltered$fileLoop, '** in Endlosschleife abgespielt'))
+  }
   if(str_detect(mapSongsFiltered$fileLoop, 'silence|atmo', negate = TRUE)) {
     raw_html(paste0(
       '<iframe width="100%" height="600px" src="https://www.youtube.com/embed/',
@@ -87,7 +100,11 @@ if (mapSongsFiltered$fileOpener != mapSongsFiltered$fileLoop & !is.na(mapSongsFi
 #| results: asis
 
 # print location songs
-cat('Hier können Sie nachvollziehen in welchen Regionen andere Lieder abgespielt werden\n')
+if(Sys.getenv('QUARTO_PROFILE') == 'english') {
+  cat('Here you can explore in what locations other tracks are played\n')
+} else {
+  cat('Hier können Sie nachvollziehen in welchen Regionen andere Lieder abgespielt werden\n')
+}
 locationSongsFiltered |>
   leaflet(
     options = leafletOptions(
@@ -103,7 +120,7 @@ locationSongsFiltered |>
     function(el, t) {
       var myMap = this;
       var image = new L.ImageOverlay(
-                        url='img/",params$map,".png',
+                        url='", ifelse(Sys.getenv('QUARTO_PROFILE') == 'german', '../', ''), "img/", params$map,".png',
                         [[1, 1], [",mapSongsFiltered$length,", ",mapSongsFiltered$length,"]]);
       image.addTo(myMap);
     }"

@@ -13,16 +13,20 @@ songs = read.csv("./data/songs.csv")
 maps = read.csv("./data/maps.csv")
 locations = read.csv("./data/locations.csv")
 
-# recode Shal'Dun
+## recode Shal'Dun
 maps = maps |>
-  mutate(mapNameDE = ifelse(map == 'P110_Shaldun.map', 'Shal Dun', mapNameDE))
+  mutate(
+    mapNameEN = ifelse(map == 'P110_Shaldun.map', 'Shal Dun', mapNameEN),
+    mapNameEN = ifelse(map == '018_farlorns_hope.map', 'Farlorns Hope', mapNameEN),
+    mapNameDE = ifelse(map == 'P110_Shaldun.map', 'Shal Dun', mapNameDE)
+  )
 
 ## merge data
 tableData = bind_rows(
-  maps |> select(map, mapSort, mapNameDE, campaign, openerId, loopId),
+  maps |> select(map, mapSort, mapNameEN, mapNameDE, campaign, openerId, loopId),
   locations |> select(map, openerId, loopId) |>
     left_join(
-      maps |> select(map, mapSort, mapNameDE, campaign),
+      maps |> select(map, mapSort, mapNameEN, mapNameDE, campaign),
       by = 'map'
     )
 ) |>
@@ -45,7 +49,8 @@ tableData = bind_rows(
   filter(!is.na(file) & str_detect(file, 'silence|red_legion.mp3', negate = TRUE)) |>
   arrange(campaignSong, file, mapSort) |>
   summarise(
-    maps = ifelse(sum(!is.na(map) > 0), paste0('<a href = ', map |> na.omit(), '.html>', mapNameDE |> na.omit(), '</a>', collapse = '<br>'), ''),
+    mapsEN = ifelse(sum(!is.na(map) > 0), paste0('<a href = ', map |> na.omit(), '.html>', mapNameEN |> na.omit(), '</a>', collapse = '<br>'), ''),
+    mapsDE = ifelse(sum(!is.na(map) > 0), paste0('<a href = ', map |> na.omit(), '.html>', mapNameDE |> na.omit(), '</a>', collapse = '<br>'), ''),
     .by = c(campaignSong, file, youtubeCode)
   ) |>
   mutate(
@@ -138,13 +143,22 @@ save(tableData, mapSongs, locationSongs, file = './data/data.Rdata')
 
 # render index and map files
 ## index
-quarto_render(input = "index.qmd")
+quarto_render(input = "index.qmd", profile = 'english')
+quarto_render(input = "index.qmd", profile = 'german')
 
 ## loop through all maps
 for (i in 1:nrow(maps)) {
   quarto_render(
     input = "mapTemplate.qmd",
     output_file = paste0(maps[i, 'map'], '.html'),
-    execute_params = list(map = maps[i, 'map'])
+    execute_params = list(map = maps[i, 'map']),
+    profile = 'english'
+  )
+  
+  quarto_render(
+    input = "mapTemplate.qmd",
+    output_file = paste0(maps[i, 'map'], '.html'),
+    execute_params = list(map = maps[i, 'map']),
+    profile = 'german'
   )
 }

@@ -1,6 +1,63 @@
 ---
-title: Startseite
+title: "`r switch(Sys.getenv('QUARTO_PROFILE'), 'english' = 'Home page', 'german' = 'Startseite')`"
 ---
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+# load libraries
+library(dplyr)
+
+# load data
+load("./data/data.Rdata")
+
+```
+
+::: {.content-visible when-profile = 'english'}
+
+Welcome to the Spellforce Songmap. This application is dedicated to the wonderful soundtrack of Spellforce 1.
+
+Discover interactively on what maps and in what locations which tracks are played.
+
+### The song system of Spellforce
+
+Each map of Spellforce has two tracks by default. One, which is played as an Opener when entering the map. Once the Opener has finished a second track is looped indefinitely. A few maps posses no Opener in which case the Loop is immediately played.
+
+Following the same principle within certain locations tracks are played once the avatar moves onto them. For example within the city of Greyfell the track sharrowdale.mp3 is played (once).
+
+A number of songs within the soundtrack however are played only on these occasions:
+
+-   the player is in the menu
+
+-   the player's army is enganged in combat
+
+-   the avatar dies/moves to a different map
+
+The information on this site is based on an analysis of the file [SndTracks.lua](https://github.com/THQNordic/SpellForceLUASources/blob/master/script/SndTracks.lua) within the game's script files published by THQ Nordic.
+
+### The tracks
+
+In the table below you can find all tracks within the Spellfoce Soundtrack except for those not actually playing anything (e. g. plain_silence.mp3). It also summarises the maps on which the songs are played. 
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+# output table
+tableData |>
+  select(file, campaignSong, youtubeLink, mapsEN) |>
+  rename(
+    Track = file,
+    Campaign = campaignSong,
+    Youtube = youtubeLink,
+    Maps = mapsEN
+  )
+```
+:::
+
+::: {.content-visible when-profile = 'german'}
 
 Willkommen auf der Spellforce Songkarte. Diese Anwendung ist dem wundervollen Soundtrack des ersten Teils der Spellforce-Reihe gewidmet.
 
@@ -10,7 +67,7 @@ Entdecken Sie interaktiv, welche Titel auf welchen Karten und an welchen Orten g
 
 Jede Karte von Spellforce verfügt standardmäßig über zwei Titel. Einer von diesen spielt bei Betritt der Karte (Opener). Sobald der Opener abgespielt wurde, wird ein zweiter Titel in Endlosschleife gespielt (Loop). Einige Karten verügen über keinen Opener. In diesem Fall wird der Loop direkt abgespielt.
 
-Nach demselben Prinzip sind im Spiel bestimmte Regionen definiert, innerhalb derer andere Titel gespielt werden, sofern die Kamera des Spielers auf diesen zentriert ist. Ein Beispiel hierfür ist die Stadt Graufurt innerhalb deren Grenzen der Titel sharrowdale.mp3 (einmalig) abgespielt wird.
+Nach demselben Prinzip sind im Spiel bestimmte Regionen definiert, innerhalb derer andere Titel gespielt werden, sofern der Avatar diese betritt. Ein Beispiel hierfür ist die Stadt Graufurt innerhalb deren Grenzen der Titel sharrowdale.mp3 (einmalig) abgespielt wird.
 
 Abseits davon gibt es eine Reihe von Titeln, die Teil des offiziellen Soundtracks sind, aber nicht von der Region abhängig sind, sondern in folgenden Fällen gespielt werden:
 
@@ -25,27 +82,21 @@ Da diese Lieder keinen räumlichen Bezug haben, werden sie auf dieser Seite nich
 Die Informationen auf dieser Seite basieren auf einer systematischen Auswertung der Datei [SndTracks.lua](https://github.com/THQNordic/SpellForceLUASources/blob/master/script/SndTracks.lua) der von THQ Nordic bereitgestellten Skriptdateien des Spiels.
 
 ### Die Lieder
+
 In der folgenden Übersicht finden Sie alle Titel des Spellforce Soundtracks. Ausgenommen sind hierbei lediglich jene Lieder, die keinen Inhalt haben und dazu dienen Stille zu erzeugen (z. B. plain_silence.mp3). Die Tabelle fasst zudem zusammen, auf welchen Karten die einzelnen Lieder vorkommen.
 
 ```{r}
 #| echo: false
 #| message: false
 #| warning: false
-
-# load libraries
-library(dplyr)
-
-# load data
-load("./data/data.Rdata")
-
 # output table
 tableData |>
-  select(file, campaignSong, youtubeLink, maps) |>
+  select(file, campaignSong, youtubeLink, mapsDE) |>
   rename(
     Lied = file,
     Kampagne = campaignSong,
     Youtube = youtubeLink,
-    Karten = maps
+    Karten = mapsDE
   )
-
 ```
+:::

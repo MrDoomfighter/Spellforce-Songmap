@@ -2,9 +2,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Startseite",
+    "title": "Home page",
     "section": "",
-    "text": "Willkommen auf der Spellforce Songkarte. Diese Anwendung ist dem wundervollen Soundtrack des ersten Teils der Spellforce-Reihe gewidmet.\nEntdecken Sie interaktiv, welche Titel auf welchen Karten und an welchen Orten gespielt werden.\n\nDas Lied-System von Spellforce\nJede Karte von Spellforce verfügt standardmäßig über zwei Titel. Einer von diesen spielt bei Betritt der Karte (Opener). Sobald der Opener abgespielt wurde, wird ein zweiter Titel in Endlosschleife gespielt (Loop). Einige Karten verügen über keinen Opener. In diesem Fall wird der Loop direkt abgespielt.\nNach demselben Prinzip sind im Spiel bestimmte Regionen definiert, innerhalb derer andere Titel gespielt werden, sofern die Kamera des Spielers auf diesen zentriert ist. Ein Beispiel hierfür ist die Stadt Graufurt innerhalb deren Grenzen der Titel sharrowdale.mp3 (einmalig) abgespielt wird.\nAbseits davon gibt es eine Reihe von Titeln, die Teil des offiziellen Soundtracks sind, aber nicht von der Region abhängig sind, sondern in folgenden Fällen gespielt werden:\n\nder Spieler befindet sich im Menü\ndie Armee des Spielers befindet sich im Kampf\nder Avatar stirbt/wechselt die Karte\n\nDa diese Lieder keinen räumlichen Bezug haben, werden sie auf dieser Seite nicht näher betrachtet.\nDie Informationen auf dieser Seite basieren auf einer systematischen Auswertung der Datei SndTracks.lua der von THQ Nordic bereitgestellten Skriptdateien des Spiels.\n\n\nDie Lieder\nIn der folgenden Übersicht finden Sie alle Titel des Spellforce Soundtracks. Ausgenommen sind hierbei lediglich jene Lieder, die keinen Inhalt haben und dazu dienen Stille zu erzeugen (z. B. plain_silence.mp3). Die Tabelle fasst zudem zusammen, auf welchen Karten die einzelnen Lieder vorkommen.\n\n\n\n\n\n\n\n\n\n\n\n\nLied\nKampagne\nYoutube\nKarten\n\n\n\n\nbattle_blade.mp3\nThe Order of Dawn\nLink\nNachtflüstertal\n\n\nbattle_music1.mp3\nThe Order of Dawn\nLink\n\n\n\nbattle_music2.mp3\nThe Order of Dawn\nLink\n\n\n\nbattlefields.mp3\nThe Order of Dawn\nLink\nEloniMulandirNachtflüstertalRabenpassUhrwerkhallen\n\n\nceltic_march.mp3\nThe Order of Dawn\nLink\nWildland Pass\n\n\ncombat_music1.mp3\nThe Order of Dawn\nLink\n\n\n\ncombat_music2.mp3\nThe Order of Dawn\nLink\n\n\n\ndeadzone.mp3\nThe Order of Dawn\nLink\nNördliche WindwallbergeFarlorns HeimGlutfängeDryadenhainDer Schlund\n\n\ndeath_music.mp3\nThe Order of Dawn\nLink\n\n\n\nelves_and_angels.mp3\nThe Order of Dawn\nLink\nEloni\n\n\nentry_desertworld.mp3\nThe Order of Dawn\nLink\nGrauschattentalGottwallSpaltShal DunBrennende Felsen\n\n\nentry_iceworld.mp3\nThe Order of Dawn\nLink\nFrostmarschenSüdliche GottmarkTirganachRabenpass\n\n\nentry_lavaworld.mp3\nThe Order of Dawn\nLink\nKlagende SteineDer atmende Wald\n\n\nentry_mountainworld.mp3\nThe Order of Dawn\nLink\nShielSüdliche WindwallbergeSharrowRote Wüste\n\n\nentry_swampworld.mp3\nThe Order of Dawn\nLink\nMulandir\n\n\nentry_waterworld.mp3\nThe Order of Dawn\nLink\nEloniDer Schlund\n\n\nentry_waterworld2.mp3\nThe Order of Dawn\nLink\nSchattenhainNachtflüstertalWachfeste\n\n\nera_of_the_orcs.mp3\nThe Order of Dawn\nLink\nShiel\n\n\nforbidden_zone.mp3\nThe Order of Dawn\nLink\nShielKlagende SteineSpaltShal DunRabenpassUhrwerkhallen\n\n\nkraga_and_braga.mp3\nThe Order of Dawn\nLink\nSchwertfels\n\n\nogre_battle.mp3\nThe Order of Dawn\nLink\nFarlorns Heim\n\n\norder_of_dawn.mp3\nThe Order of Dawn\nLink\nGrauschattentalSüdliche GottmarkKathai\n\n\nplain_desertworld.mp3\nThe Order of Dawn\nLink\nGrauschattentalWisperFarlorns HeimSpaltRote Wüste\n\n\nplain_iceworld.mp3\nThe Order of Dawn\nLink\nFrostmarschenSchwertfelsSüdliche GottmarkWintertalRabenpass\n\n\nplain_lavaworld.mp3\nThe Order of Dawn\nLink\nSüdliche WindwallbergeKlagende SteineMulandirDer atmende WaldShal Dun\n\n\nplain_mountainworld.mp3\nThe Order of Dawn\nLink\nTutorialFrostmarschenSchwertfelsSüdliche GottmarkFastholme\n\n\nplain_swampworld.mp3\nThe Order of Dawn\nLink\nSchattenhainShielSharrowFrostfallBrennende FelsenDer Schlund\n\n\nplain_waterworld.mp3\nThe Order of Dawn\nLink\nEloniGottwallEchosümpfe\n\n\nplain_waterworld2.mp3\nThe Order of Dawn\nLink\nSchattenhainNördliche WindwallbergeNachtflüstertalSchattengrenze\n\n\nplain_world.mp3\nThe Order of Dawn\nLink\nGraufurtWildland PassSüdliche WindwallbergeDer AbgrundDryadenhainKnochentempel\n\n\nrunewarrior.mp3\nThe Order of Dawn\nLink\nKlagende SteineMirraw ThurBrennende FelsenWachfeste\n\n\nsharrowdale.mp3\nThe Order of Dawn\nLink\nGraufurtNördliche WindwallbergeSturmfelsen\n\n\nspellforce.mp3\nThe Order of Dawn\nLink\n\n\n\nstrategy_and_gameplay.mp3\nThe Order of Dawn\nLink\nLiannon\n\n\nbattle_on.mp3\nThe Breath of Winter\nLink\n\n\n\nblack_gate.mp3\nThe Breath of Winter\nLink\nEchosümpfeGlutfängeRote WüsteUhrwerkhallen\n\n\ncall_of_the_dead.mp3\nThe Breath of Winter\nLink\nGletscherbruchStadt der Seelen\n\n\nclose_combat.mp3\nThe Breath of Winter\nLink\n\n\n\ndespair.mp3\nThe Breath of Winter\nLink\nFastholmeStadt der SeelenRote Wüste\n\n\ndoomsday.mp3\nThe Breath of Winter\nLink\nShal Dun\n\n\ndungeon_dimension.mp3\nThe Breath of Winter\nLink\nTirganachDer AbgrundUhrwerkhallen\n\n\nelvensong_menu.mp3\nThe Breath of Winter\nLink\n\n\n\nhuman_village.mp3\nThe Breath of Winter\nLink\nFastholmeSchwarze Küste\n\n\nice_elves.mp3\nThe Breath of Winter\nLink\nTirganachDryadenhain\n\n\nplain_darkened.mp3\nThe Breath of Winter\nLink\nMirraw ThurSchattengrenzeOnyxbuchtUhrwerkhallen\n\n\nplain_enchanted.mp3\nThe Breath of Winter\nLink\nSturmfelsenEchosümpfeDer Schlund\n\n\nplain_mystified.mp3\nThe Breath of Winter\nLink\nFrostfallTirganachGletscherbruchWachfeste\n\n\nrune_master.mp3\nThe Breath of Winter\nLink\nMirraw ThurOnyxbucht\n\n\narena.mp3\nShadow of the Phoenix\nLink\nColosseum\n\n\narmy_of_darkness.mp3\nShadow of the Phoenix\nLink\n\n\n\natmo_oasis.mp3\nShadow of the Phoenix\n\nEmpyriaKathai\n\n\nbattle_of_the_undead.mp3\nShadow of the Phoenix\nLink\n\n\n\nbone_temple.mp3\nShadow of the Phoenix\nLink\nSchwarze KüsteKnochentempel\n\n\nbone_temple_whisper.mp3\nShadow of the Phoenix\nLink\nKnochentempel\n\n\ncity_of_souls.mp3\nShadow of the Phoenix\nLink\nStadt der Seelen\n\n\ncombat_and_fight.mp3\nShadow of the Phoenix\nLink\n\n\n\nempyria.mp3\nShadow of the Phoenix\nLink\nEmpyriaColosseumKathai\n\n\nplains_of_blackwater.mp3\nShadow of the Phoenix\nLink\nOnyxbuchtRabenpassWachfeste\n\n\nplains_of_devastation.mp3\nShadow of the Phoenix\nLink\nSchwarze KüsteBrennende FelsenKnochentempel\n\n\nplains_of_myth.mp3\nShadow of the Phoenix\nLink\nStadt der SeelenEmpyriaKathai\n\n\nthe_clockwork_crypts.mp3\nShadow of the Phoenix\nLink\nBrennende FelsenUhrwerkhallenKnochentempel\n\n\nthe_gorge.mp3\nShadow of the Phoenix\nLink\nRote WüsteDer Schlund\n\n\nthe_kathai.mp3\nShadow of the Phoenix\nLink\nKathai\n\n\nwhisper.mp3\nShadow of the Phoenix\nLink\nUhrwerkhallen"
+    "text": "Welcome to the Spellforce Songmap. This application is dedicated to the wonderful soundtrack of Spellforce 1.\nDiscover interactively on what maps and in what locations which tracks are played.\n\nThe song system of Spellforce\nEach map of Spellforce has two tracks by default. One, which is played as an Opener when entering the map. Once the Opener has finished a second track is looped indefinitely. A few maps posses no Opener in which case the Loop is immediately played.\nFollowing the same principle within certain locations tracks are played once the avatar moves onto them. For example within the city of Greyfell the track sharrowdale.mp3 is played (once).\nA number of songs within the soundtrack however are played only on these occasions:\n\nthe player is in the menu\nthe player’s army is enganged in combat\nthe avatar dies/moves to a different map\n\nThe information on this site is based on an analysis of the file SndTracks.lua within the game’s script files published by THQ Nordic.\n\n\nThe tracks\nIn the table below you can find all tracks within the Spellfoce Soundtrack except for those not actually playing anything (e. g. plain_silence.mp3). It also summarises the maps on which the songs are played.\n\n\n\n\n\n\n\n\n\n\n\n\nTrack\nCampaign\nYoutube\nMaps\n\n\n\n\nbattle_blade.mp3\nThe Order of Dawn\nLink\nNightwhisper Dale\n\n\nbattle_music1.mp3\nThe Order of Dawn\nLink\n\n\n\nbattle_music2.mp3\nThe Order of Dawn\nLink\n\n\n\nbattlefields.mp3\nThe Order of Dawn\nLink\nEloniMulandirNightwhisper DaleRaven PassThe Clockwork Crypts\n\n\nceltic_march.mp3\nThe Order of Dawn\nLink\nWildland Pass\n\n\ncombat_music1.mp3\nThe Order of Dawn\nLink\n\n\n\ncombat_music2.mp3\nThe Order of Dawn\nLink\n\n\n\ndeadzone.mp3\nThe Order of Dawn\nLink\nNorthern WindwallsFarlorns HopeFirefangsDryad CoveThe Gorge\n\n\ndeath_music.mp3\nThe Order of Dawn\nLink\n\n\n\nelves_and_angels.mp3\nThe Order of Dawn\nLink\nEloni\n\n\nentry_desertworld.mp3\nThe Order of Dawn\nLink\nGreydusk ValeThe GodwallThe RiftShal DunBlazing Stones\n\n\nentry_iceworld.mp3\nThe Order of Dawn\nLink\nIcegate MarshSouthern GodmarkTirganachRaven Pass\n\n\nentry_lavaworld.mp3\nThe Order of Dawn\nLink\nHowling MoundsBreathing Forest\n\n\nentry_mountainworld.mp3\nThe Order of Dawn\nLink\nThe ShielSouthern WindwallsSharrowdaleRed Waste\n\n\nentry_swampworld.mp3\nThe Order of Dawn\nLink\nMulandir\n\n\nentry_waterworld.mp3\nThe Order of Dawn\nLink\nEloniThe Gorge\n\n\nentry_waterworld2.mp3\nThe Order of Dawn\nLink\nLeafshadeNightwhisper DaleDarkwind Keep\n\n\nera_of_the_orcs.mp3\nThe Order of Dawn\nLink\nThe Shiel\n\n\nforbidden_zone.mp3\nThe Order of Dawn\nLink\nThe ShielHowling MoundsThe RiftShal DunRaven PassThe Clockwork Crypts\n\n\nkraga_and_braga.mp3\nThe Order of Dawn\nLink\nStoneblade Mountains\n\n\nogre_battle.mp3\nThe Order of Dawn\nLink\nFarlorns Hope\n\n\norder_of_dawn.mp3\nThe Order of Dawn\nLink\nGreydusk ValeSouthern GodmarkKathai\n\n\nplain_desertworld.mp3\nThe Order of Dawn\nLink\nGreydusk ValeWhisperFarlorns HopeThe RiftRed Waste\n\n\nplain_iceworld.mp3\nThe Order of Dawn\nLink\nIcegate MarshStoneblade MountainsSouthern GodmarkWinterdeepRaven Pass\n\n\nplain_lavaworld.mp3\nThe Order of Dawn\nLink\nSouthern WindwallsHowling MoundsMulandirBreathing ForestShal Dun\n\n\nplain_mountainworld.mp3\nThe Order of Dawn\nLink\nTutorialIcegate MarshStoneblade MountainsSouthern GodmarkFastholme\n\n\nplain_swampworld.mp3\nThe Order of Dawn\nLink\nLeafshadeThe ShielSharrowdaleFrostfallBlazing StonesThe Gorge\n\n\nplain_waterworld.mp3\nThe Order of Dawn\nLink\nEloniThe GodwallEcho Swamps\n\n\nplain_waterworld2.mp3\nThe Order of Dawn\nLink\nLeafshadeNorthern WindwallsNightwhisper DaleNevershade Frontier\n\n\nplain_world.mp3\nThe Order of Dawn\nLink\nGreyfellWildland PassSouthern WindwallsThe AbyssDryad CoveThe Bone Temple\n\n\nrunewarrior.mp3\nThe Order of Dawn\nLink\nHowling MoundsMirraw ThurBlazing StonesDarkwind Keep\n\n\nsharrowdale.mp3\nThe Order of Dawn\nLink\nGreyfellNorthern WindwallsStormcleaver Rocks\n\n\nspellforce.mp3\nThe Order of Dawn\nLink\n\n\n\nstrategy_and_gameplay.mp3\nThe Order of Dawn\nLink\nLiannon\n\n\nbattle_on.mp3\nThe Breath of Winter\nLink\n\n\n\nblack_gate.mp3\nThe Breath of Winter\nLink\nEcho SwampsFirefangsRed WasteThe Clockwork Crypts\n\n\ncall_of_the_dead.mp3\nThe Breath of Winter\nLink\nFrostweaver RiftCity of Souls\n\n\nclose_combat.mp3\nThe Breath of Winter\nLink\n\n\n\ndespair.mp3\nThe Breath of Winter\nLink\nFastholmeCity of SoulsRed Waste\n\n\ndoomsday.mp3\nThe Breath of Winter\nLink\nShal Dun\n\n\ndungeon_dimension.mp3\nThe Breath of Winter\nLink\nTirganachThe AbyssThe Clockwork Crypts\n\n\nelvensong_menu.mp3\nThe Breath of Winter\nLink\n\n\n\nhuman_village.mp3\nThe Breath of Winter\nLink\nFastholmeBlackwater Coast\n\n\nice_elves.mp3\nThe Breath of Winter\nLink\nTirganachDryad Cove\n\n\nplain_darkened.mp3\nThe Breath of Winter\nLink\nMirraw ThurNevershade FrontierOnyx ShoresThe Clockwork Crypts\n\n\nplain_enchanted.mp3\nThe Breath of Winter\nLink\nStormcleaver RocksEcho SwampsThe Gorge\n\n\nplain_mystified.mp3\nThe Breath of Winter\nLink\nFrostfallTirganachFrostweaver RiftDarkwind Keep\n\n\nrune_master.mp3\nThe Breath of Winter\nLink\nMirraw ThurOnyx Shores\n\n\narena.mp3\nShadow of the Phoenix\nLink\nColosseum\n\n\narmy_of_darkness.mp3\nShadow of the Phoenix\nLink\n\n\n\natmo_oasis.mp3\nShadow of the Phoenix\n\nEmpyriaKathai\n\n\nbattle_of_the_undead.mp3\nShadow of the Phoenix\nLink\n\n\n\nbone_temple.mp3\nShadow of the Phoenix\nLink\nBlackwater CoastThe Bone Temple\n\n\nbone_temple_whisper.mp3\nShadow of the Phoenix\nLink\nThe Bone Temple\n\n\ncity_of_souls.mp3\nShadow of the Phoenix\nLink\nCity of Souls\n\n\ncombat_and_fight.mp3\nShadow of the Phoenix\nLink\n\n\n\nempyria.mp3\nShadow of the Phoenix\nLink\nEmpyriaColosseumKathai\n\n\nplains_of_blackwater.mp3\nShadow of the Phoenix\nLink\nOnyx ShoresRaven PassDarkwind Keep\n\n\nplains_of_devastation.mp3\nShadow of the Phoenix\nLink\nBlackwater CoastBlazing StonesThe Bone Temple\n\n\nplains_of_myth.mp3\nShadow of the Phoenix\nLink\nCity of SoulsEmpyriaKathai\n\n\nthe_clockwork_crypts.mp3\nShadow of the Phoenix\nLink\nBlazing StonesThe Clockwork CryptsThe Bone Temple\n\n\nthe_gorge.mp3\nShadow of the Phoenix\nLink\nRed WasteThe Gorge\n\n\nthe_kathai.mp3\nShadow of the Phoenix\nLink\nKathai\n\n\nwhisper.mp3\nShadow of the Phoenix\nLink\nThe Clockwork Crypts"
   },
   {
     "objectID": "map_template.html",
@@ -18,14 +18,14 @@
     "href": "tutorial.map.html",
     "title": "Tutorial",
     "section": "",
-    "text": "Auf der Karte wird entry_silence.mp3 als Opener abgespielt\nDanach wird plain_mountainworld.mp3 in Endlosschleife abgespielt\n\nHier können Sie nachvollziehen in welchen Regionen andere Lieder abgespielt werden"
+    "text": "On this map entry_silence.mp3 is played as Opener\nAfterwards plain_mountainworld.mp3 is looped indefinitely\n\nHere you can explore in what locations other tracks are played"
   },
   {
     "objectID": "000_Greyfell.map.html",
     "href": "000_Greyfell.map.html",
-    "title": "Graufurt",
+    "title": "Greyfell",
     "section": "",
-    "text": "Auf der Karte wird plain_world.mp3 abgespielt\n\nHier können Sie nachvollziehen in welchen Regionen andere Lieder abgespielt werden"
+    "text": "On this map plain_world.mp3 is played\n\nHere you can explore in what locations other tracks are played"
   },
   {
     "objectID": "mapTemplate.html",
@@ -39,322 +39,322 @@
     "href": "001_liannon.map.html",
     "title": "Liannon",
     "section": "",
-    "text": "Auf der Karte wird plain_silence.mp3 abgespielt\nHier können Sie nachvollziehen in welchen Regionen andere Lieder abgespielt werden"
+    "text": "On this map plain_silence.mp3 is played\nHere you can explore in what locations other tracks are played"
   },
   {
     "objectID": "002_eloni.map.html",
     "href": "002_eloni.map.html",
     "title": "Eloni",
     "section": "",
-    "text": "Auf der Karte wird entry_waterworld.mp3 als Opener abgespielt\n\nDanach wird plain_waterworld.mp3 in Endlosschleife abgespielt\n\nHier können Sie nachvollziehen in welchen Regionen andere Lieder abgespielt werden"
+    "text": "On this map entry_waterworld.mp3 is played as Opener\n\nAfterwards plain_waterworld.mp3 is looped indefinitely\n\nHere you can explore in what locations other tracks are played"
   },
   {
     "objectID": "003_leafshade.map.html",
     "href": "003_leafshade.map.html",
-    "title": "Schattenhain",
+    "title": "Leafshade",
     "section": "",
-    "text": "Auf der Karte wird entry_waterworld2.mp3 als Opener abgespielt\n\nDanach wird plain_waterworld2.mp3 in Endlosschleife abgespielt\n\nHier können Sie nachvollziehen in welchen Regionen andere Lieder abgespielt werden"
+    "text": "On this map entry_waterworld2.mp3 is played as Opener\n\nAfterwards plain_waterworld2.mp3 is looped indefinitely\n\nHere you can explore in what locations other tracks are played"
   },
   {
     "objectID": "004_the_shiel.map.html",
     "href": "004_the_shiel.map.html",
-    "title": "Shiel",
+    "title": "The Shiel",
     "section": "",
-    "text": "Auf der Karte wird entry_mountainworld.mp3 als Opener abgespielt\n\nDanach wird plain_swampworld.mp3 in Endlosschleife abgespielt\n\nHier können Sie nachvollziehen in welchen Regionen andere Lieder abgespielt werden"
+    "text": "On this map entry_mountainworld.mp3 is played as Opener\n\nAfterwards plain_swampworld.mp3 is looped indefinitely\n\nHere you can explore in what locations other tracks are played"
   },
   {
     "objectID": "005_wildland_pass.map.html",
     "href": "005_wildland_pass.map.html",
     "title": "Wildland Pass",
     "section": "",
-    "text": "Auf der Karte wird plain_silence.mp3 abgespielt\nHier können Sie nachvollziehen in welchen Regionen andere Lieder abgespielt werden"
+    "text": "On this map plain_silence.mp3 is played\nHere you can explore in what locations other tracks are played"
   },
   {
     "objectID": "006_icegate_marsh.map.html",
     "href": "006_icegate_marsh.map.html",
-    "title": "Frostmarschen",
+    "title": "Icegate Marsh",
     "section": "",
-    "text": "Auf der Karte wird entry_iceworld.mp3 als Opener abgespielt\n\nDanach wird plain_mountainworld.mp3 in Endlosschleife abgespielt\n\nHier können Sie nachvollziehen in welchen Regionen andere Lieder abgespielt werden"
+    "text": "On this map entry_iceworld.mp3 is played as Opener\n\nAfterwards plain_mountainworld.mp3 is looped indefinitely\n\nHere you can explore in what locations other tracks are played"
   },
   {
     "objectID": "007_northern_windwalls.map.html",
     "href": "007_northern_windwalls.map.html",
-    "title": "Nördliche Windwallberge",
+    "title": "Northern Windwalls",
     "section": "",
-    "text": "Auf der Karte wird plain_waterworld2.mp3 abgespielt\n\nHier können Sie nachvollziehen in welchen Regionen andere Lieder abgespielt werden"
+    "text": "On this map plain_waterworld2.mp3 is played\n\nHere you can explore in what locations other tracks are played"
   },
   {
     "objectID": "008_southern_windwalls.map.html",
     "href": "008_southern_windwalls.map.html",
-    "title": "Südliche Windwallberge",
+    "title": "Southern Windwalls",
     "section": "",
-    "text": "Auf der Karte wird plain_world.mp3 abgespielt\n\nHier können Sie nachvollziehen in welchen Regionen andere Lieder abgespielt werden"
+    "text": "On this map plain_world.mp3 is played\n\nHere you can explore in what locations other tracks are played"
   },
   {
     "objectID": "008NP_stoneblade_mountain.map.html",
     "href": "008NP_stoneblade_mountain.map.html",
-    "title": "Schwertfels",
+    "title": "Stoneblade Mountains",
     "section": "",
-    "text": "Auf der Karte wird entry_silence.mp3 als Opener abgespielt\nDanach wird plain_iceworld.mp3 in Endlosschleife abgespielt\n\nHier können Sie nachvollziehen in welchen Regionen andere Lieder abgespielt werden"
+    "text": "On this map entry_silence.mp3 is played as Opener\nAfterwards plain_iceworld.mp3 is looped indefinitely\n\nHere you can explore in what locations other tracks are played"
   },
   {
     "objectID": "009_greydusk_vale.map.html",
     "href": "009_greydusk_vale.map.html",
-    "title": "Grauschattental",
+    "title": "Greydusk Vale",
     "section": "",
-    "text": "Auf der Karte wird entry_desertworld.mp3 als Opener abgespielt\n\nDanach wird plain_desertworld.mp3 in Endlosschleife abgespielt\n\nHier können Sie nachvollziehen in welchen Regionen andere Lieder abgespielt werden"
+    "text": "On this map entry_desertworld.mp3 is played as Opener\n\nAfterwards plain_desertworld.mp3 is looped indefinitely\n\nHere you can explore in what locations other tracks are played"
   },
   {
     "objectID": "012_howling_mounds.map.html",
     "href": "012_howling_mounds.map.html",
-    "title": "Klagende Steine",
+    "title": "Howling Mounds",
     "section": "",
-    "text": "Auf der Karte wird entry_lavaworld.mp3 als Opener abgespielt\n\nDanach wird plain_lavaworld.mp3 in Endlosschleife abgespielt\n\nHier können Sie nachvollziehen in welchen Regionen andere Lieder abgespielt werden"
+    "text": "On this map entry_lavaworld.mp3 is played as Opener\n\nAfterwards plain_lavaworld.mp3 is looped indefinitely\n\nHere you can explore in what locations other tracks are played"
   },
   {
     "objectID": "013_whisper.map.html",
     "href": "013_whisper.map.html",
-    "title": "Wisper",
+    "title": "Whisper",
     "section": "",
-    "text": "Auf der Karte wird plain_desertworld.mp3 abgespielt\n\nHier können Sie nachvollziehen in welchen Regionen andere Lieder abgespielt werden"
+    "text": "On this map plain_desertworld.mp3 is played\n\nHere you can explore in what locations other tracks are played"
   },
   {
     "objectID": "014_the_godwall.map.html",
     "href": "014_the_godwall.map.html",
-    "title": "Gottwall",
+    "title": "The Godwall",
     "section": "",
-    "text": "Auf der Karte wird plain_silence.mp3 abgespielt\nHier können Sie nachvollziehen in welchen Regionen andere Lieder abgespielt werden"
+    "text": "On this map plain_silence.mp3 is played\nHere you can explore in what locations other tracks are played"
   },
   {
     "objectID": "016_mulandir.map.html",
     "href": "016_mulandir.map.html",
     "title": "Mulandir",
     "section": "",
-    "text": "Auf der Karte wird entry_swampworld.mp3 als Opener abgespielt\n\nDanach wird plain_lavaworld.mp3 in Endlosschleife abgespielt\n\nHier können Sie nachvollziehen in welchen Regionen andere Lieder abgespielt werden"
+    "text": "On this map entry_swampworld.mp3 is played as Opener\n\nAfterwards plain_lavaworld.mp3 is looped indefinitely\n\nHere you can explore in what locations other tracks are played"
   },
   {
     "objectID": "018_farlorns_hope.map.html",
     "href": "018_farlorns_hope.map.html",
-    "title": "Farlorns Heim",
+    "title": "Farlorns Hope",
     "section": "",
-    "text": "Auf der Karte wird plain_silence.mp3 abgespielt\nHier können Sie nachvollziehen in welchen Regionen andere Lieder abgespielt werden"
+    "text": "On this map plain_silence.mp3 is played\nHere you can explore in what locations other tracks are played"
   },
   {
     "objectID": "019_the_rift.map.html",
     "href": "019_the_rift.map.html",
-    "title": "Spalt",
+    "title": "The Rift",
     "section": "",
-    "text": "Auf der Karte wird entry_desertworld.mp3 als Opener abgespielt\n\nDanach wird plain_desertworld.mp3 in Endlosschleife abgespielt\n\nHier können Sie nachvollziehen in welchen Regionen andere Lieder abgespielt werden"
+    "text": "On this map entry_desertworld.mp3 is played as Opener\n\nAfterwards plain_desertworld.mp3 is looped indefinitely\n\nHere you can explore in what locations other tracks are played"
   },
   {
     "objectID": "021_southern_godmark.map.html",
     "href": "021_southern_godmark.map.html",
-    "title": "Südliche Gottmark",
+    "title": "Southern Godmark",
     "section": "",
-    "text": "Auf der Karte wird entry_iceworld.mp3 als Opener abgespielt\n\nDanach wird plain_iceworld.mp3 in Endlosschleife abgespielt\n\nHier können Sie nachvollziehen in welchen Regionen andere Lieder abgespielt werden"
+    "text": "On this map entry_iceworld.mp3 is played as Opener\n\nAfterwards plain_iceworld.mp3 is looped indefinitely\n\nHere you can explore in what locations other tracks are played"
   },
   {
     "objectID": "023_nightwhisper_dale.map.html",
     "href": "023_nightwhisper_dale.map.html",
-    "title": "Nachtflüstertal",
+    "title": "Nightwhisper Dale",
     "section": "",
-    "text": "Auf der Karte wird entry_waterworld2.mp3 als Opener abgespielt\n\nDanach wird plain_waterworld2.mp3 in Endlosschleife abgespielt\n\nHier können Sie nachvollziehen in welchen Regionen andere Lieder abgespielt werden"
+    "text": "On this map entry_waterworld2.mp3 is played as Opener\n\nAfterwards plain_waterworld2.mp3 is looped indefinitely\n\nHere you can explore in what locations other tracks are played"
   },
   {
     "objectID": "025_breathing_forest.map.html",
     "href": "025_breathing_forest.map.html",
-    "title": "Der atmende Wald",
+    "title": "Breathing Forest",
     "section": "",
-    "text": "Auf der Karte wird entry_lavaworld.mp3 als Opener abgespielt\n\nDanach wird plain_lavaworld.mp3 in Endlosschleife abgespielt\n\nHier können Sie nachvollziehen in welchen Regionen andere Lieder abgespielt werden"
+    "text": "On this map entry_lavaworld.mp3 is played as Opener\n\nAfterwards plain_lavaworld.mp3 is looped indefinitely\n\nHere you can explore in what locations other tracks are played"
   },
   {
     "objectID": "027_sharrowdale.map.html",
     "href": "027_sharrowdale.map.html",
-    "title": "Sharrow",
+    "title": "Sharrowdale",
     "section": "",
-    "text": "Auf der Karte wird entry_mountainworld.mp3 als Opener abgespielt\n\nDanach wird plain_swampworld.mp3 in Endlosschleife abgespielt\n\nHier können Sie nachvollziehen in welchen Regionen andere Lieder abgespielt werden"
+    "text": "On this map entry_mountainworld.mp3 is played as Opener\n\nAfterwards plain_swampworld.mp3 is looped indefinitely\n\nHere you can explore in what locations other tracks are played"
   },
   {
     "objectID": "P101_Mirraw_Thur.map.html",
     "href": "P101_Mirraw_Thur.map.html",
     "title": "Mirraw Thur",
     "section": "",
-    "text": "Auf der Karte wird rune_master.mp3 als Opener abgespielt\n\nDanach wird plain_darkened.mp3 in Endlosschleife abgespielt\n\nHier können Sie nachvollziehen in welchen Regionen andere Lieder abgespielt werden"
+    "text": "On this map rune_master.mp3 is played as Opener\n\nAfterwards plain_darkened.mp3 is looped indefinitely\n\nHere you can explore in what locations other tracks are played"
   },
   {
     "objectID": "P102_Stormcleaver_Rocks.map.html",
     "href": "P102_Stormcleaver_Rocks.map.html",
-    "title": "Sturmfelsen",
+    "title": "Stormcleaver Rocks",
     "section": "",
-    "text": "Auf der Karte wird plain_enchanted.mp3 abgespielt\n\nHier können Sie nachvollziehen in welchen Regionen andere Lieder abgespielt werden"
+    "text": "On this map plain_enchanted.mp3 is played\n\nHere you can explore in what locations other tracks are played"
   },
   {
     "objectID": "P103_Echo_Swamps.map.html",
     "href": "P103_Echo_Swamps.map.html",
-    "title": "Echosümpfe",
+    "title": "Echo Swamps",
     "section": "",
-    "text": "Auf der Karte wird plain_enchanted.mp3 abgespielt\n\nHier können Sie nachvollziehen in welchen Regionen andere Lieder abgespielt werden"
+    "text": "On this map plain_enchanted.mp3 is played\n\nHere you can explore in what locations other tracks are played"
   },
   {
     "objectID": "P104_Frostfall.map.html",
     "href": "P104_Frostfall.map.html",
     "title": "Frostfall",
     "section": "",
-    "text": "Auf der Karte wird plain_silence.mp3 abgespielt\nHier können Sie nachvollziehen in welchen Regionen andere Lieder abgespielt werden"
+    "text": "On this map plain_silence.mp3 is played\nHere you can explore in what locations other tracks are played"
   },
   {
     "objectID": "P105_Tirganach.map.html",
     "href": "P105_Tirganach.map.html",
     "title": "Tirganach",
     "section": "",
-    "text": "Auf der Karte wird entry_iceworld.mp3 als Opener abgespielt\n\nDanach wird plain_mystified.mp3 in Endlosschleife abgespielt\n\nHier können Sie nachvollziehen in welchen Regionen andere Lieder abgespielt werden"
+    "text": "On this map entry_iceworld.mp3 is played as Opener\n\nAfterwards plain_mystified.mp3 is looped indefinitely\n\nHere you can explore in what locations other tracks are played"
   },
   {
     "objectID": "P107_Winterdeep.map.html",
     "href": "P107_Winterdeep.map.html",
-    "title": "Wintertal",
+    "title": "Winterdeep",
     "section": "",
-    "text": "Auf der Karte wird plain_iceworld.mp3 abgespielt\n\nHier können Sie nachvollziehen in welchen Regionen andere Lieder abgespielt werden"
+    "text": "On this map plain_iceworld.mp3 is played\n\nHere you can explore in what locations other tracks are played"
   },
   {
     "objectID": "P108_Fastholme.map.html",
     "href": "P108_Fastholme.map.html",
     "title": "Fastholme",
     "section": "",
-    "text": "Auf der Karte wird plain_mountainworld.mp3 abgespielt\n\nHier können Sie nachvollziehen in welchen Regionen andere Lieder abgespielt werden"
+    "text": "On this map plain_mountainworld.mp3 is played\n\nHere you can explore in what locations other tracks are played"
   },
   {
     "objectID": "P109_Nevershade_Frontier.map.html",
     "href": "P109_Nevershade_Frontier.map.html",
-    "title": "Schattengrenze",
+    "title": "Nevershade Frontier",
     "section": "",
-    "text": "Auf der Karte wird plain_darkened.mp3 abgespielt\n\nHier können Sie nachvollziehen in welchen Regionen andere Lieder abgespielt werden"
+    "text": "On this map plain_darkened.mp3 is played\n\nHere you can explore in what locations other tracks are played"
   },
   {
     "objectID": "P111_Firefangs.map.html",
     "href": "P111_Firefangs.map.html",
-    "title": "Glutfänge",
+    "title": "Firefangs",
     "section": "",
-    "text": "Auf der Karte wird black_gate.mp3 abgespielt\n\nHier können Sie nachvollziehen in welchen Regionen andere Lieder abgespielt werden"
+    "text": "On this map black_gate.mp3 is played\n\nHere you can explore in what locations other tracks are played"
   },
   {
     "objectID": "P110_Shaldun.map.html",
     "href": "P110_Shaldun.map.html",
     "title": "Shal Dun",
     "section": "",
-    "text": "Auf der Karte wird entry_desertworld.mp3 als Opener abgespielt\n\nDanach wird plain_lavaworld.mp3 in Endlosschleife abgespielt\n\nHier können Sie nachvollziehen in welchen Regionen andere Lieder abgespielt werden"
+    "text": "On this map entry_desertworld.mp3 is played as Opener\n\nAfterwards plain_lavaworld.mp3 is looped indefinitely\n\nHere you can explore in what locations other tracks are played"
   },
   {
     "objectID": "P113_The_Abyss.map.html",
     "href": "P113_The_Abyss.map.html",
-    "title": "Der Abgrund",
+    "title": "The Abyss",
     "section": "",
-    "text": "Auf der Karte wird plain_world.mp3 abgespielt\n\nHier können Sie nachvollziehen in welchen Regionen andere Lieder abgespielt werden"
+    "text": "On this map plain_world.mp3 is played\n\nHere you can explore in what locations other tracks are played"
   },
   {
     "objectID": "P115_Frostweaver_Rift.map.html",
     "href": "P115_Frostweaver_Rift.map.html",
-    "title": "Gletscherbruch",
+    "title": "Frostweaver Rift",
     "section": "",
-    "text": "Auf der Karte wird call_of_the_dead.mp3 als Opener abgespielt\n\nDanach wird plain_mystified.mp3 in Endlosschleife abgespielt\n\nHier können Sie nachvollziehen in welchen Regionen andere Lieder abgespielt werden"
+    "text": "On this map call_of_the_dead.mp3 is played as Opener\n\nAfterwards plain_mystified.mp3 is looped indefinitely\n\nHere you can explore in what locations other tracks are played"
   },
   {
     "objectID": "P201_Blackwater_Coast.map.html",
     "href": "P201_Blackwater_Coast.map.html",
-    "title": "Schwarze Küste",
+    "title": "Blackwater Coast",
     "section": "",
-    "text": "Auf der Karte wird plains_of_devastation.mp3 abgespielt\n\nHier können Sie nachvollziehen in welchen Regionen andere Lieder abgespielt werden"
+    "text": "On this map plains_of_devastation.mp3 is played\n\nHere you can explore in what locations other tracks are played"
   },
   {
     "objectID": "P202_City_Of_Souls.map.html",
     "href": "P202_City_Of_Souls.map.html",
-    "title": "Stadt der Seelen",
+    "title": "City of Souls",
     "section": "",
-    "text": "Auf der Karte wird call_of_the_dead.mp3 als Opener abgespielt\n\nDanach wird plain_silence.mp3 in Endlosschleife abgespielt\nHier können Sie nachvollziehen in welchen Regionen andere Lieder abgespielt werden"
+    "text": "On this map call_of_the_dead.mp3 is played as Opener\n\nAfterwards plain_silence.mp3 is looped indefinitely\nHere you can explore in what locations other tracks are played"
   },
   {
     "objectID": "P203_Onyx_Shores.map.html",
     "href": "P203_Onyx_Shores.map.html",
-    "title": "Onyxbucht",
+    "title": "Onyx Shores",
     "section": "",
-    "text": "Auf der Karte wird rune_master.mp3 als Opener abgespielt\n\nDanach wird plains_of_blackwater.mp3 in Endlosschleife abgespielt\n\nHier können Sie nachvollziehen in welchen Regionen andere Lieder abgespielt werden"
+    "text": "On this map rune_master.mp3 is played as Opener\n\nAfterwards plains_of_blackwater.mp3 is looped indefinitely\n\nHere you can explore in what locations other tracks are played"
   },
   {
     "objectID": "P204_Empyria.map.html",
     "href": "P204_Empyria.map.html",
     "title": "Empyria",
     "section": "",
-    "text": "Auf der Karte wird empyria.mp3 als Opener abgespielt\n\nDanach wird plains_of_myth.mp3 in Endlosschleife abgespielt\n\nHier können Sie nachvollziehen in welchen Regionen andere Lieder abgespielt werden"
+    "text": "On this map empyria.mp3 is played as Opener\n\nAfterwards plains_of_myth.mp3 is looped indefinitely\n\nHere you can explore in what locations other tracks are played"
   },
   {
     "objectID": "P205_Dryad_Cove.map.html",
     "href": "P205_Dryad_Cove.map.html",
-    "title": "Dryadenhain",
+    "title": "Dryad Cove",
     "section": "",
-    "text": "Auf der Karte wird ice_elves.mp3 als Opener abgespielt\n\nDanach wird plain_world.mp3 in Endlosschleife abgespielt\n\nHier können Sie nachvollziehen in welchen Regionen andere Lieder abgespielt werden"
+    "text": "On this map ice_elves.mp3 is played as Opener\n\nAfterwards plain_world.mp3 is looped indefinitely\n\nHere you can explore in what locations other tracks are played"
   },
   {
     "objectID": "P206_Red_Waste.map.html",
     "href": "P206_Red_Waste.map.html",
-    "title": "Rote Wüste",
+    "title": "Red Waste",
     "section": "",
-    "text": "Auf der Karte wird entry_mountainworld.mp3 als Opener abgespielt\n\nDanach wird plain_desertworld.mp3 in Endlosschleife abgespielt\n\nHier können Sie nachvollziehen in welchen Regionen andere Lieder abgespielt werden"
+    "text": "On this map entry_mountainworld.mp3 is played as Opener\n\nAfterwards plain_desertworld.mp3 is looped indefinitely\n\nHere you can explore in what locations other tracks are played"
   },
   {
     "objectID": "P207_Raven_Pass.map.html",
     "href": "P207_Raven_Pass.map.html",
-    "title": "Rabenpass",
+    "title": "Raven Pass",
     "section": "",
-    "text": "Auf der Karte wird entry_iceworld.mp3 als Opener abgespielt\n\nDanach wird plains_of_blackwater.mp3 in Endlosschleife abgespielt\n\nHier können Sie nachvollziehen in welchen Regionen andere Lieder abgespielt werden"
+    "text": "On this map entry_iceworld.mp3 is played as Opener\n\nAfterwards plains_of_blackwater.mp3 is looped indefinitely\n\nHere you can explore in what locations other tracks are played"
   },
   {
     "objectID": "P208_Blazing_Stones.map.html",
     "href": "P208_Blazing_Stones.map.html",
-    "title": "Brennende Felsen",
+    "title": "Blazing Stones",
     "section": "",
-    "text": "Auf der Karte wird entry_desertworld.mp3 als Opener abgespielt\n\nDanach wird plains_of_devastation.mp3 in Endlosschleife abgespielt\n\nHier können Sie nachvollziehen in welchen Regionen andere Lieder abgespielt werden"
+    "text": "On this map entry_desertworld.mp3 is played as Opener\n\nAfterwards plains_of_devastation.mp3 is looped indefinitely\n\nHere you can explore in what locations other tracks are played"
   },
   {
     "objectID": "P200_Collosseum.map.html",
     "href": "P200_Collosseum.map.html",
     "title": "Colosseum",
     "section": "",
-    "text": "Auf der Karte wird empyria.mp3 als Opener abgespielt\n\nDanach wird plain_silence.mp3 in Endlosschleife abgespielt\nHier können Sie nachvollziehen in welchen Regionen andere Lieder abgespielt werden"
+    "text": "On this map empyria.mp3 is played as Opener\n\nAfterwards plain_silence.mp3 is looped indefinitely\nHere you can explore in what locations other tracks are played"
   },
   {
     "objectID": "P209_Kathai.map.html",
     "href": "P209_Kathai.map.html",
     "title": "Kathai",
     "section": "",
-    "text": "Auf der Karte wird the_kathai.mp3 als Opener abgespielt\n\nDanach wird plains_of_myth.mp3 in Endlosschleife abgespielt\n\nHier können Sie nachvollziehen in welchen Regionen andere Lieder abgespielt werden"
+    "text": "On this map the_kathai.mp3 is played as Opener\n\nAfterwards plains_of_myth.mp3 is looped indefinitely\n\nHere you can explore in what locations other tracks are played"
   },
   {
     "objectID": "P210_The_Clockwork_Crypts.map.html",
     "href": "P210_The_Clockwork_Crypts.map.html",
-    "title": "Uhrwerkhallen",
+    "title": "The Clockwork Crypts",
     "section": "",
-    "text": "Auf der Karte wird plain_silence.mp3 abgespielt\nHier können Sie nachvollziehen in welchen Regionen andere Lieder abgespielt werden"
+    "text": "On this map plain_silence.mp3 is played\nHere you can explore in what locations other tracks are played"
   },
   {
     "objectID": "P211_Darkwind_Keep.map.html",
     "href": "P211_Darkwind_Keep.map.html",
-    "title": "Wachfeste",
+    "title": "Darkwind Keep",
     "section": "",
-    "text": "Auf der Karte wird entry_waterworld2.mp3 als Opener abgespielt\n\nDanach wird plains_of_blackwater.mp3 in Endlosschleife abgespielt\n\nHier können Sie nachvollziehen in welchen Regionen andere Lieder abgespielt werden"
+    "text": "On this map entry_waterworld2.mp3 is played as Opener\n\nAfterwards plains_of_blackwater.mp3 is looped indefinitely\n\nHere you can explore in what locations other tracks are played"
   },
   {
     "objectID": "P212_The_Gorge.map.html",
     "href": "P212_The_Gorge.map.html",
-    "title": "Der Schlund",
+    "title": "The Gorge",
     "section": "",
-    "text": "Auf der Karte wird entry_waterworld.mp3 als Opener abgespielt\n\nDanach wird plain_enchanted.mp3 in Endlosschleife abgespielt\n\nHier können Sie nachvollziehen in welchen Regionen andere Lieder abgespielt werden"
+    "text": "On this map entry_waterworld.mp3 is played as Opener\n\nAfterwards plain_enchanted.mp3 is looped indefinitely\n\nHere you can explore in what locations other tracks are played"
   },
   {
     "objectID": "P213_The_Bone_Temple.map.html",
     "href": "P213_The_Bone_Temple.map.html",
-    "title": "Knochentempel",
+    "title": "The Bone Temple",
     "section": "",
-    "text": "Auf der Karte wird plains_of_devastation.mp3 abgespielt\n\nHier können Sie nachvollziehen in welchen Regionen andere Lieder abgespielt werden"
+    "text": "On this map plains_of_devastation.mp3 is played\n\nHere you can explore in what locations other tracks are played"
   },
   {
     "objectID": "test.html",

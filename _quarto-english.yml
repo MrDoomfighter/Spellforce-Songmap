@@ -1,0 +1,118 @@
+project:
+  output-dir: docs
+  resources: img
+
+website:
+  title: "Spellforce Songmap"
+  search: false
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home page
+      - text : The Order of Dawn
+        menu :
+        - text: Tutorial
+          href: tutorial.map.html
+        - text: Greyfell
+          href: 000_Greyfell.map.html
+        - text: Liannon
+          href: 001_liannon.map.html
+        - text: Eloni
+          href: 002_eloni.map.html
+        - text: Leafshade
+          href: 003_leafshade.map.html
+        - text: The Shiel
+          href: 004_the_shiel.map.html
+        - text: Wildland Pass
+          href: 005_wildland_pass.map.html
+        - text: Icegate Marsh
+          href: 006_icegate_marsh.map.html
+        - text: Northern Windwalls
+          href: 007_northern_windwalls.map.html
+        - text: Southern Windwalls
+          href: 008_southern_windwalls.map.html
+        - text: Stoneblade Mountains
+          href: 008NP_stoneblade_mountain.map.html
+        - text: Greydusk Vale
+          href: 009_greydusk_vale.map.html
+        - text: Howling Mounds
+          href: 012_howling_mounds.map.html
+        - text: Whisper
+          href: 013_whisper.map.html
+        - text: The Godwall
+          href: 014_the_godwall.map.html
+        - text: Mulandir
+          href: 016_mulandir.map.html
+        - text: Farlorn's Hope
+          href: 018_farlorns_hope.map.html
+        - text: The Rift
+          href: 019_the_rift.map.html
+        - text: Southern Godmark
+          href: 021_southern_godmark.map.html
+        - text: Nightwhisper Dale
+          href: 023_nightwhisper_dale.map.html
+        - text: Breathing Forest
+          href: 025_breathing_forest.map.html
+        - text: Sharrowdale
+          href: 027_sharrowdale.map.html
+      - text : The Breath of Winter
+        menu :
+        - text: Mirraw Thur
+          href: P101_Mirraw_Thur.map.html
+        - text: Stormcleaver Rocks
+          href: P102_Stormcleaver_Rocks.map.html
+        - text: Echo Swamps
+          href: P103_Echo_Swamps.map.html
+        - text: Frostfall
+          href: P104_Frostfall.map.html
+        - text: Tirganach
+          href: P105_Tirganach.map.html
+        - text: Winterdeep
+          href: P107_Winterdeep.map.html
+        - text: Fastholme
+          href: P108_Fastholme.map.html
+        - text: Nevershade Frontier
+          href: P109_Nevershade_Frontier.map.html
+        - text: Shal'Dun
+          href: P110_Shaldun.map.html
+        - text: Firefangs
+          href: P111_Firefangs.map.html
+        - text: The Abyss
+          href: P113_The_Abyss.map.html
+        - text: Frostweaver Rift
+          href: P115_Frostweaver_Rift.map.html
+      - text : Shadow of the Phoenix
+        menu :
+        - text: Blackwater Coast
+          href: P201_Blackwater_Coast.map.html
+        - text: City of Souls
+          href: P202_City_Of_Souls.map.html
+        - text: Onyx Shores
+          href: P203_Onyx_Shores.map.html
+        - text: Empyria
+          href: P204_Empyria.map.html
+        - text: Dryad Cove
+          href: P205_Dryad_Cove.map.html
+        - text: Red Waste
+          href: P206_Red_Waste.map.html
+        - text: Raven Pass
+          href: P207_Raven_Pass.map.html
+        - text: Blazing Stones
+          href: P208_Blazing_Stones.map.html
+        - text: Colosseum
+          href: P200_Collosseum.map.html
+        - text: Kathai
+          href: P209_Kathai.map.html
+        - text: The Clockwork Crypts
+          href: P210_The_Clockwork_Crypts.map.html
+        - text: Darkwind Keep
+          href: P211_Darkwind_Keep.map.html
+        - text: The Gorge
+          href: P212_The_Gorge.map.html
+        - text: The Bone Temple
+          href: P213_The_Bone_Temple.map.html
+    right: 
+      - href: index.qmd
+        text: English
+      - href: de/index.html
+        text: Deutsch
